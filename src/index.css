@@ -55,19 +55,46 @@ ul.nav {
     padding: 0.5rem;
 }
 
-#images-container {
+#map-container {
     display: inline-block;
     position: relative;
+    margin-left: 1vw;
+    /* text-align: center; */
 }
 
-#nahversorgung {
-    width: 100vw;
+#map-container > img:not(:nth-child(1)) {
+    width: 13vw;
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+}
+
+#map-container img.active {
+    /* border: 1px solid red; */
+    opacity: 1;
+}
+
+#map-container > :nth-child(1) {
+    width: 85vw;
+}
+
+#map-container > img:nth-child(3) {
+    top: 24%;
+}
+
+#map-container > img:nth-child(4) {
+    top: 48%;
+}
+
+#map-container > img:nth-child(5) {
+    top: 72%;
 }
 
 .layer-image {
     width: 7vw;
     position: absolute;
     z-index: 10;
+    box-sizing: border-box;
 }
 .layer-image:hover {
     border-radius: 25px;
