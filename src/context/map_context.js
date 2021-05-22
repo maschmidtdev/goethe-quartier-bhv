@@ -18,7 +18,6 @@ const initialMapState = {
     ],
     mapImage: MapDefault,
 };
-
 const mapImages = [MapGebaeude, MapTraffic, MapStadtGruen, MapWirtschaft];
 
 export const MapProvider = ({ children }) => {

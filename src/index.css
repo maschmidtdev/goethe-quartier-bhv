@@ -62,11 +62,19 @@ ul.nav {
     /* text-align: center; */
 }
 
-#map-container > img:not(:nth-child(1)) {
-    width: 13vw;
+.picto-container {
     position: absolute;
-    left: 0;
+    top: 0;
+}
+.picto-container > img {
+    width: 13vw;
     opacity: 0.5;
+}
+.picto-container > h4 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
 }
 
 #map-container img.active {
@@ -78,16 +86,21 @@ ul.nav {
     width: 85vw;
 }
 
-#map-container > img:nth-child(3) {
+.picto-container:nth-child(3) {
     top: 24%;
 }
 
-#map-container > img:nth-child(4) {
+.picto-container:nth-child(4) {
     top: 48%;
 }
-
-#map-container > img:nth-child(5) {
+.picto-container:nth-child(4) h4 {
+    bottom: -10%;
+}
+.picto-container:nth-child(5) {
     top: 72%;
+}
+.picto-container:nth-child(5) h4 {
+    bottom: -15%;
 }
 
 .layer-image {
