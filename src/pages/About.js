@@ -1,9 +1,12 @@
 import React from 'react';
+import Map from '../components/Map';
+import { MapProvider } from '../context/map_context';
 
 export default function About() {
-  return (
-    <div>
-      <h1>About</h1>
-    </div>
-  );
+    return (
+        <MapProvider>
+            <h1>About</h1>
+            <Map />
+        </MapProvider>
+    );
 }

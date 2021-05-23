@@ -1,33 +1,50 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import { useNavContext } from '../context/nav_context';
 
 export default function Navbar() {
-  return (
-    <div>
-      <ul className='nav'>
-        <li>
-          <Link to='/'>Home</Link>
-        </li>
-        <li>
-          <Link to='/about'>Über uns</Link>
-        </li>
-        <li>
-          <Link to='/analyse'>Analyse</Link>
-        </li>
-        <li>
-          <Link to='/eindruecke'>Eindrücke</Link>
-        </li>
-        <li>
-          <Link to='/mitgestaltung'>Mitgestaltung</Link>
-        </li>
-        <li>
-          <Link to='/akteure'>Akteure</Link>
-        </li>
-        <li>
-          <Link to='/visionen'>Visionen</Link>
-        </li>
-      </ul>
-    </div>
-  );
+    const { isActive, handleClick } = useNavContext();
+
+    return (
+        <nav className={`${isActive ? 'active' : ''}`}>
+            <ul>
+                <li>
+                    <Link to='/' onClick={handleClick}>
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/about' onClick={handleClick}>
+                        Über uns
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/analyse' onClick={handleClick}>
+                        Analyse
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/eindruecke' onClick={handleClick}>
+                        Eindrücke
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/mitgestaltung' onClick={handleClick}>
+                        Mitgestaltung
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/akteure' onClick={handleClick}>
+                        Akteure
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/visionen' onClick={handleClick}>
+                        Visionen
+                    </Link>
+                </li>
+            </ul>
+        </nav>
+    );
 }

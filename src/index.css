@@ -26,6 +26,17 @@ Variables
     --fullWidth: 1170px;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
@@ -33,6 +44,7 @@ body {
         'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* overflow: hidden; */
 }
 
 code {
@@ -40,19 +52,93 @@ code {
         monospace;
 }
 
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-color: coral;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: violet;
+    opacity: 0;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 100vh;
+}
+
+nav.active {
+    opacity: 1;
+}
+
+nav.active nav ul {
+    list-style: none;
+}
+
+nav ul > li {
+    padding: 0.5rem;
+}
+nav ul > li > a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+}
+
+nav,
+#hamburger {
+    z-index: 10;
+}
+
+#hamburger {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 15%;
+    border: 2px solid black;
+    right: 10vw;
+    top: 10vh;
+}
+#hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger-line {
+    height: 6px;
+    width: 80%;
+    position: absolute;
+    margin-left: 10%;
+    background-color: black;
+    transition: all 0.6s ease;
+}
+.hamburger-line:nth-child(1) {
+    top: 20%;
+}
+.hamburger-line:nth-child(2) {
+    top: 44%;
+}
+.hamburger-line:nth-child(3) {
+    top: 68%;
+}
+.active > .hamburger-line:nth-child(1) {
+    top: 44%;
+    transform: rotate(45deg);
+}
+.active > .hamburger-line:nth-child(2) {
+    width: 0;
+    margin-left: 50%;
+}
+.active > .hamburger-line:nth-child(3) {
+    top: 44%;
+    transform: rotate(-45deg);
+}
+
 .hero-image {
     background: url('./assets/bremerhaven.jpg') no-repeat center bottom;
     background-size: cover;
     height: 300px;
-}
-
-ul.nav {
-    list-style: none;
-}
-
-.nav > li {
-    display: inline-block;
-    padding: 0.5rem;
 }
 
 #map-container {
@@ -69,6 +155,7 @@ ul.nav {
 .picto-container > img {
     width: 13vw;
     opacity: 0.5;
+    transition: all 0.5s ease;
 }
 .picto-container > h4 {
     position: absolute;
@@ -103,23 +190,9 @@ ul.nav {
     bottom: -15%;
 }
 
-.layer-image {
-    width: 7vw;
-    position: absolute;
-    z-index: 10;
-    box-sizing: border-box;
-}
-.layer-image:hover {
-    border-radius: 25px;
-    border: 3px solid green;
-}
-
-.layer-image:nth-child(2) {
-    top: 50%;
-    left: 10%;
-}
-
-.layer-image:nth-child(3) {
-    top: 18%;
-    left: 28%;
+footer {
+    height: 50px;
+    background-color: darkslategray;
+    color: white;
+    padding: 0.8rem;
 }
