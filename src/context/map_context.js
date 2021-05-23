@@ -24,6 +24,7 @@ export const MapProvider = ({ children }) => {
     const [mapState, setMapState] = useState(initialMapState);
 
     const handleMouseEnter = (id) => {
+        console.log('enter', id);
         const newStates = mapState.pictoStates.map((state, pictoId) => {
             return pictoId === id ? { isActive: true } : { isActive: false };
         });
@@ -34,8 +35,8 @@ export const MapProvider = ({ children }) => {
         });
     };
 
-    const handleMouseLeave = (e) => {
-        console.log('leave', e.target);
+    const handleMouseLeave = (id) => {
+        console.log('leave', id);
     };
 
     return (
