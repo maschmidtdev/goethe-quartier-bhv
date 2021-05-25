@@ -4,7 +4,7 @@ import { useMapContext } from '../context/map_context';
 const texts = ['Gebäude', 'Verkehr & Wege', 'Wirtschaft', 'Stadt-GRÜN'];
 
 export default function Picto({ image, id }) {
-    const { mapState, handleMouseEnter, handleMouseLeave } = useMapContext();
+    const { mapState, handleClick } = useMapContext();
     const [isActive, setIsActive] = useState(true);
 
     useEffect(() => {
@@ -16,8 +16,10 @@ export default function Picto({ image, id }) {
             <img
                 src={image}
                 alt='Pictogram image'
-                onMouseEnter={() => handleMouseEnter(id)}
-                onMouseLeave={() => handleMouseLeave(id)}
+                onClick={() => handleClick(id)}
+                onLoad={() => {
+                    console.log('loaded', id);
+                }}
                 className={`${isActive ? 'active' : ''}`}
             />
             <h4>{texts[id]}</h4>

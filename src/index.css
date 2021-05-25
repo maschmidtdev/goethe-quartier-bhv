@@ -152,6 +152,10 @@ nav ul > li > a {
     position: absolute;
     top: 0;
 }
+.picto-container:hover {
+    cursor: pointer;
+}
+
 .picto-container > img {
     width: 13vw;
     opacity: 0.5;

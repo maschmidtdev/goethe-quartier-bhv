@@ -7,6 +7,7 @@ import MapStadtGruen from './map-stadt-gruen.png';
 import MapTraffic from './map-traffic.png';
 import MapWirtschaft from './map-wirtschaft.png';
 import MapDefault from './map.png';
+import Videosource from './start.mp4';
 
 export {
     PictoGebaeude,
@@ -18,4 +19,5 @@ export {
     MapTraffic,
     MapWirtschaft,
     MapDefault,
+    Videosource
 };
