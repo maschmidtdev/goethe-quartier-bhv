@@ -61,7 +61,7 @@ code {
 
 nav {
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     /* background-color: teal; */
@@ -70,6 +70,7 @@ nav {
     width: 200px;
     height: 100vh;
     z-index: -10;
+    padding-top: 70px;
 }
 
 nav.active {
@@ -79,6 +80,7 @@ nav.active {
 
 nav.active nav ul {
     list-style: none;
+    margin-top: 30px;
 }
 
 nav ul > li {
@@ -109,7 +111,7 @@ nav ul > li > a {
     border-radius: 15%;
     border: 2px solid black;
     right: 10vw;
-    top: 10vh;
+    top: 20px;
 }
 #hamburger:hover {
     cursor: pointer;
