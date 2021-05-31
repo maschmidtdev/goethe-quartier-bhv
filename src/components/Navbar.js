@@ -15,6 +15,11 @@ export default function Navbar() {
                     </Link>
                 </li>
                 <li>
+                    <Link to='/map' onClick={handleClick}>
+                        Karte
+                    </Link>
+                </li>
+                <li>
                     <Link to='/about' onClick={handleClick}>
                         Über uns
                     </Link>

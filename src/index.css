@@ -44,7 +44,7 @@ body {
         'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 code {
@@ -60,20 +60,21 @@ code {
 }
 
 nav {
-    display: flex;
     justify-content: center;
     position: absolute;
-    background-color: violet;
-    opacity: 0;
-    transition: opacity 0.6s ease;
-    width: 100%;
+    top: 0;
+    right: 0;
+    /* background-color: teal; */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    width: 200px;
     height: 100vh;
     z-index: -10;
 }
 
 nav.active {
-    opacity: 1;
     z-index: 10;
+    transform: translateX(0);
 }
 
 nav.active nav ul {
@@ -81,9 +82,17 @@ nav.active nav ul {
 }
 
 nav ul > li {
-    padding: 0.5rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border-radius: 10px 0 0 15px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
+nav ul > li:hover {
+    background-color: thistle;
+}
+
 nav ul > li > a {
+    display: block;
     text-decoration: none;
     font-size: 24px;
     font-family: Helvetica, sans-serif;
@@ -95,8 +104,8 @@ nav ul > li > a {
 
 #hamburger {
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 15%;
     border: 2px solid black;
     right: 10vw;
@@ -143,29 +152,11 @@ nav ul > li > a {
 }
 
 #map-container {
+    /* display: flex; */
     display: inline-block;
     position: relative;
-}
-
-.picto-container {
-    /* border: 1px solid red; */
-    position: absolute;
-    top: 0;
-}
-.picto-container:hover {
-    cursor: pointer;
-}
-
-.picto-container > img {
-    width: 13vw;
-    opacity: 0.5;
-    transition: opacity 0.5s ease;
-}
-.picto-container > h4 {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 8%;
+    justify-content: center;
+    align-items: center;
 }
 
 #map-container img.active {
@@ -174,23 +165,129 @@ nav ul > li > a {
 
 #map-container > :nth-child(1) {
     width: 85vw;
+    height: auto;
+    /* height: 100vh;
+    width: auto; */
 }
 
+.picto-container {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    left: 19%;
+}
+
+.picto-container.close {
+    cursor: pointer;
+}
+
+.picto-container:hover {
+    cursor: pointer;
+}
+
+.picto-container > img {
+    width: 13vw;
+    height: auto;
+    /* height: 13vh;
+    width: auto; */
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+}
+.picto-container > h4 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: darkslateblue;
+}
+
+.picto-container:nth-child(2) {
+    top: 8%;
+}
+.picto-container:nth-child(2) h4 {
+    bottom: -18%;
+}
 .picto-container:nth-child(3) {
-    top: 24%;
+    top: 30%;
+}
+.picto-container:nth-child(3) h4 {
+    bottom: -25%;
 }
 
 .picto-container:nth-child(4) {
-    top: 48%;
+    top: 50%;
 }
 .picto-container:nth-child(4) h4 {
-    bottom: 0;
+    bottom: -12%;
 }
 .picto-container:nth-child(5) {
     top: 72%;
 }
 .picto-container:nth-child(5) h4 {
-    bottom: 0;
+    bottom: -15%;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    /* width: 50px;
+    height: 20px; */
+    padding: 0.5rem;
+    background-color: lightseagreen;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.info.active {
+    display: block;
+    cursor: pointer;
+}
+/* Gebäude */
+.info:nth-of-type(5) {
+    top: 26%;
+    left: 20%;
+}
+.info:nth-of-type(6) {
+    top: 45%;
+    left: 37%;
+}
+.info:nth-of-type(7) {
+    top: 37%;
+    left: 85%;
+}
+/* Verkehr & Wege */
+.info:nth-of-type(8) {
+    top: 34.5%;
+    left: 39%;
+}
+.info:nth-of-type(9) {
+    top: 53%;
+    left: 44%;
+}
+.info:nth-of-type(10) {
+    top: 37%;
+    left: 78%;
+}
+/* Wirtschaft */
+.info:nth-of-type(11) {
+    top: 30.5%;
+    left: 32%;
+}
+.info:nth-of-type(12) {
+    top: 36.5%;
+    left: 40%;
+}
+.info:nth-of-type(13) {
+    top: 50%;
+    left: 43%;
+}
+/* Stadt Grün */
+.info:nth-of-type(14) {
+    top: 39.5%;
+    left: 77%;
+}
+.info:nth-of-type(15) {
+    top: 91%;
+    left: 51%;
 }
 
 footer {

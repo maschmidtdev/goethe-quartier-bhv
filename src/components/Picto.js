@@ -5,7 +5,7 @@ const texts = ['Gebäude', 'Verkehr & Wege', 'Wirtschaft', 'Stadt-GRÜN'];
 
 export default function Picto({ image, id }) {
     const { mapState, handleClick } = useMapContext();
-    const [isActive, setIsActive] = useState(true);
+    const [isActive, setIsActive] = useState(false);
 
     useEffect(() => {
         setIsActive(mapState.pictoStates[id].isActive);

@@ -11,10 +11,10 @@ const MapContext = React.createContext();
 
 const initialMapState = {
     pictoStates: [
-        { isActive: true },
-        { isActive: true },
-        { isActive: true },
-        { isActive: true },
+        { isActive: false },
+        { isActive: false },
+        { isActive: false },
+        { isActive: false },
     ],
     mapImage: MapDefault,
 };
@@ -24,7 +24,6 @@ export const MapProvider = ({ children }) => {
     const [mapState, setMapState] = useState(initialMapState);
 
     const handleClick = (id) => {
-        console.log('enter', id);
         const newStates = mapState.pictoStates.map((state, pictoId) => {
             return pictoId === id ? { isActive: true } : { isActive: false };
         });

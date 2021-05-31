@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hamburger from './components/Hamburger';
 import Home from './pages/Home';
+import Map from './pages/Map';
 import About from './pages/About';
 import Analyse from './pages/Analyse';
 import Eindruecke from './pages/Eindruecke';
@@ -26,6 +27,9 @@ function App() {
                 <Route exact path='/'>
                     <Home />
                 </Route>
+                <Route exact path='/map'>
+                    <Map />
+                </Route>
                 <Route exact path='/about'>
                     <About />
                 </Route>
@@ -45,7 +49,7 @@ function App() {
                     <Visionen />
                 </Route>
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
         </Router>
     );
 }
