@@ -24,17 +24,17 @@ export default function Map() {
             <Picto image={PictoTraffic} id={1} />
             <Picto image={PictoStadtGruen} id={2} />
             <Picto image={PictoWirtschaft} id={3} />
-            <Info pictoId={0} text='studentisches Wohnen' />
-            <Info pictoId={0} text='altersgerechtes Wohnen' />
-            <Info pictoId={0} text='Gastronomie Erdgeschossnutzung' />
-            <Info pictoId={1} text='sudentisches Wohnen' />
-            <Info pictoId={1} text='sudentisches Wohnen' />
-            <Info pictoId={1} text='sudentisches Wohnen' />
-            <Info pictoId={2} text='sudentisches Wohnen' />
-            <Info pictoId={2} text='sudentisches Wohnen' />
-            <Info pictoId={2} text='sudentisches Wohnen' />
-            <Info pictoId={3} text='sudentisches Wohnen' />
-            <Info pictoId={3} text='sudentisches Wohnen' />
+            <Info pictoId={0} infoId={0} />
+            <Info pictoId={0} infoId={1} />
+            <Info pictoId={0} infoId={2} />
+            <Info pictoId={1} infoId={3} />
+            <Info pictoId={1} infoId={4} />
+            <Info pictoId={1} infoId={5} />
+            <Info pictoId={2} infoId={6} />
+            <Info pictoId={2} infoId={7} />
+            <Info pictoId={2} infoId={8} />
+            <Info pictoId={3} infoId={9} />
+            <Info pictoId={3} infoId={10} />
         </div>
     );
 }

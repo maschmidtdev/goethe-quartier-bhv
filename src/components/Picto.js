@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useMapContext } from '../context/map_context';
 
-const texts = ['Gebäude', 'Verkehr & Wege', 'Wirtschaft', 'Stadt-GRÜN'];
+const texts = ['Gebäude', 'Verkehr & Wege', 'Stadt-GRÜN', 'Wirtschaft'];
 
 export default function Picto({ image, id }) {
     const { mapState, handleClick } = useMapContext();

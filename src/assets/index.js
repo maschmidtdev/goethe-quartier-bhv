@@ -2,11 +2,11 @@ import PictoGebaeude from './picto-gebaeude.png';
 import PictoStadtGruen from './picto-stadt-gruen.png';
 import PictoTraffic from './picto-traffic.png';
 import PictoWirtschaft from './picto-wirtschaft.png';
-import MapGebaeude from './map-gebaeude.png';
-import MapStadtGruen from './map-stadt-gruen.png';
-import MapTraffic from './map-traffic.png';
-import MapWirtschaft from './map-wirtschaft.png';
-import MapDefault from './map.png';
+import MapGebaeude from './map-gebaeude.jpeg';
+import MapStadtGruen from './map-stadt-gruen.jpeg';
+import MapTraffic from './map-traffic.jpeg';
+import MapWirtschaft from './map-wirtschaft.jpeg';
+import MapDefault from './map.jpeg';
 import Videosource from './start.mp4';
 
 export {
@@ -19,5 +19,5 @@ export {
     MapTraffic,
     MapWirtschaft,
     MapDefault,
-    Videosource
+    Videosource,
 };

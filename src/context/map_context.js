@@ -17,6 +17,8 @@ const initialMapState = {
         { isActive: false },
     ],
     mapImage: MapDefault,
+    isModalOpen: false,
+    modalText: 'Lorem Ipsum',
 };
 const mapImages = [MapGebaeude, MapTraffic, MapStadtGruen, MapWirtschaft];
 
@@ -34,11 +36,20 @@ export const MapProvider = ({ children }) => {
         });
     };
 
+    const setModal = (state, text) => {
+        setMapState({
+            ...mapState,
+            isModalOpen: state,
+            modalText: text,
+        });
+    };
+
     return (
         <MapContext.Provider
             value={{
                 mapState,
                 handleClick,
+                setModal,
             }}
         >
             {children}
