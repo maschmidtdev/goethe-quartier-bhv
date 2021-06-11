@@ -7,6 +7,7 @@ import MapStadtGruen from './map-stadt-gruen.jpeg';
 import MapTraffic from './map-traffic.jpeg';
 import MapWirtschaft from './map-wirtschaft.jpeg';
 import MapDefault from './map.jpeg';
+import MapOverlay from './map-gebaeude-new.png';
 import Videosource from './start.mp4';
 
 export {
@@ -19,5 +20,6 @@ export {
     MapTraffic,
     MapWirtschaft,
     MapDefault,
+    MapOverlay,
     Videosource,
 };

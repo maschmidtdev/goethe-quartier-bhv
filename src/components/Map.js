@@ -7,6 +7,7 @@ import {
     PictoStadtGruen,
     PictoWirtschaft,
     PictoTraffic,
+    MapOverlay,
 } from '../assets';
 
 export default function Map() {
@@ -20,10 +21,13 @@ export default function Map() {
     return (
         <div id='map-container'>
             <img src={mapImage} alt='map' />
-            <Picto image={PictoGebaeude} id={0} />
-            <Picto image={PictoTraffic} id={1} />
-            <Picto image={PictoStadtGruen} id={2} />
-            <Picto image={PictoWirtschaft} id={3} />
+            <img src={MapOverlay} alt='overlay' />
+            <div className='picto-flex'>
+                <Picto image={PictoGebaeude} id={0} />
+                <Picto image={PictoTraffic} id={1} />
+                <Picto image={PictoStadtGruen} id={2} />
+                <Picto image={PictoWirtschaft} id={3} />
+            </div>
             <Info pictoId={0} infoId={0} />
             <Info pictoId={0} infoId={1} />
             <Info pictoId={0} infoId={2} />

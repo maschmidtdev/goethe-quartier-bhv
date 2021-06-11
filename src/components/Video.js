@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Videosource } from '../assets/index';
 
 export default function Video() {
-    console.log(Videosource);
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleClick = (target) => {
+        if (!isClicked) {
+            setIsClicked(true);
+        }
+        if (target.paused) {
+            target.play();
+        } else {
+            target.pause();
+        }
+    };
 
     return (
-        <div>
-            <video width='750' height='500' controls>
+        <div
+            className={`${
+                isClicked ? 'video-container clicked' : 'video-container'
+            }`}
+        >
+            <h1>Klicken zum Abspielen</h1>
+            <video onClick={(e) => handleClick(e.target)}>
                 <source src={Videosource} type='video/mp4' />
             </video>
         </div>
