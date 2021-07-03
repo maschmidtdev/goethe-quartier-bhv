@@ -523,10 +523,42 @@ footer {
     object-fit: cover;
     flex-grow: 1;
 }
+
 .details-content.studentisches-wohnen > p {
     text-align: left;
     padding: 0 1rem;
 }
+
+.details-content .container {
+    position: relative;
+    height: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.details-content .container .combine {
+    height: 100%;
+    width: 60%;
+    position: relative;
+    flex-basis: 60%;
+    flex-shrink: 0;
+}
+.details-content .container .combine img:nth-child(1) {
+    height: 100%;
+    width: 100%;
+}
+.details-content .container .combine img:nth-child(2) {
+    position: absolute;
+    top: 10vh;
+    right: -10px;
+    height: 50%;
+    max-width: 50%;
+}
+.details-content .container p {
+    padding: 0 1rem;
+    text-align: left;
+}
+
 .details-content > .pagination {
     width: 100%;
     height: 60px;
