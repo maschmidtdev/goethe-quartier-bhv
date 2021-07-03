@@ -74,14 +74,22 @@ export default function StudentischesWohnen() {
         <div className='details-content studentisches-wohnen'>
             {setContent(page)}
             <div className='pagination'>
-                <div
-                    className='click prev'
-                    onClick={() => handleClick(-1)}
-                ></div>
-                <div
-                    className='click next'
-                    onClick={() => handleClick(1)}
-                ></div>
+                <div className='click' onClick={() => handleClick(-1)}>
+                    {page > 1 && (
+                        <>
+                            <div className='circle'></div>
+                            <span>Zurück</span>
+                        </>
+                    )}
+                </div>
+                <div className='click' onClick={() => handleClick(1)}>
+                    {page < 3 && (
+                        <>
+                            <span>Weiter</span>
+                            <div className='circle'></div>
+                        </>
+                    )}
+                </div>
             </div>
         </div>
     );

@@ -527,7 +527,7 @@ footer {
     text-align: left;
     padding: 0 1rem;
 }
-.details-content.studentisches-wohnen > .pagination {
+.details-content > .pagination {
     width: 100%;
     height: 60px;
     display: flex;
@@ -535,16 +535,27 @@ footer {
     align-items: center;
     flex-shrink: 0;
 }
-.details-content.studentisches-wohnen .click {
+.details-content .click {
+    display: flex;
+    align-items: center;
+}
+.details-content .click span {
+    font-size: large;
+    font-weight: bold;
+}
+
+.details-content .click .circle {
     border: 2px solid black;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    display: flex;
     justify-content: space-between;
     margin: 0 1rem;
 }
-.details-content.studentisches-wohnen .click:hover {
+.details-content .click:hover {
+    cursor: pointer;
+}
+.details-content .click:hover {
     cursor: pointer;
 }
 
