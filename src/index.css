@@ -144,15 +144,12 @@ nav ul > li > a {
 
 .video-container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
 }
 .video-container h1 {
     position: absolute;
     top: 49%;
-    left: 45%;
-    width: 100vw;
-    height: 100vh;
+    left: 40%;
     transition: opacity 0.5s ease;
 }
 .video-container.clicked h1 {
@@ -160,8 +157,10 @@ nav ul > li > a {
 }
 
 .video-container > video {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
+    /* width: auto;
+    height: auto; */
 }
 
 .video-container > video:hover {
@@ -508,6 +507,8 @@ footer {
     height: 100%;
 }
 
+/* STUDENTISCHES WOHNEN */
+
 .details-content.studentisches-wohnen {
     display: flex;
     flex-direction: column;
@@ -558,6 +559,48 @@ footer {
     padding: 0 1rem;
     text-align: left;
 }
+
+/* KÜNSTLER RESIDENZ */
+.kuenstlerresidenz {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.kuenstlerresidenz .video-container {
+    flex: 1;
+    /* background-color: red; */
+}
+.kuenstlerresidenz .video-container .video-child {
+    width: 90%;
+    height: 90%;
+    background-color: green;
+}
+.kuenstlerresidenz .video-container video {
+    width: 100%;
+    height: 100%;
+    /* object-fit: scale-down; */
+    /* object-fit: contain; */
+    /* object-fit: cover; */
+    object-fit: fill;
+}
+
+.kuenstlerresidenz h2 {
+    flex-basis: 6%;
+    margin: 1rem 0;
+}
+
+.kuenstlerresidenz p {
+    font-size: medium;
+    padding: 0 2rem;
+    text-align: left;
+    flex: 0 1 auto;
+}
+
+/* PAGINATION */
 
 .details-content > .pagination {
     width: 100%;

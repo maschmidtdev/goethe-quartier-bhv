@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Videosource } from '../assets/index';
 
-export default function Video() {
+export default function Video({ src }) {
     const [isClicked, setIsClicked] = useState(false);
 
     const handleClick = (target) => {
@@ -23,7 +22,7 @@ export default function Video() {
         >
             <h1>Klicken zum Abspielen</h1>
             <video onClick={(e) => handleClick(e.target)}>
-                <source src={Videosource} type='video/mp4' />
+                <source src={src} type='video/mp4' />
             </video>
         </div>
     );

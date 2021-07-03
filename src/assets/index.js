@@ -6,8 +6,9 @@
 // import MapStadtGruen from './map-stadt-gruen.png';
 // import MapTraffic from './map-traffic.png';
 // import MapWirtschaft from './map-wirtschaft.png';
-import MapDefault from './map.png';
 import Videosource from './start.mp4';
+import VideoKuenstlerResidenz from './kuenstlerresidenz.mp4';
+import MapDefault from './map.png';
 import CategoryAlteWege from './category-alte-wege.png';
 import CategoryGebaude from './category-gebaeude.png';
 import CategoryStadtGruen from './category-stadt-gruen.png';
@@ -44,6 +45,7 @@ export {
     // MapWirtschaft,
     MapDefault,
     Videosource,
+    VideoKuenstlerResidenz,
     CategoryAlteWege,
     CategoryGebaude,
     CategoryStadtGruen,
