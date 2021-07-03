@@ -1,44 +1,53 @@
 import React, { useState, useEffect } from 'react';
 import { useMapContext } from '../context/map_context';
-import Picto from '../components/Picto';
+// import Picto from '../components/Picto';
+import MapMenu from '../components/MapMenu';
 import Info from '../components/Info';
-import {
-    PictoGebaeude,
-    PictoStadtGruen,
-    PictoWirtschaft,
-    PictoTraffic,
-    MapOverlay,
-} from '../assets';
+import Details from '../components/Details';
+// import {
+//     PictoGebaeude,
+//     PictoStadtGruen,
+//     PictoWirtschaft,
+//     PictoTraffic,
+// } from '../assets';
 
 export default function Map() {
-    const { mapState } = useMapContext();
-    const [mapImage, setMapImage] = useState(mapState.mapImage);
+    const { mapState, setDetails } = useMapContext();
+    // const [mapImage, setMapImage] = useState(mapState.mapImage);
+    const [mapOverlay, setMapOverlay] = useState(mapState.mapOverlay);
 
     useEffect(() => {
-        setMapImage(mapState.mapImage);
+        setMapOverlay(mapState.mapOverlay);
     }, [mapState]);
+
+    const mapClick = () => {
+        setDetails(null); // remove details window;
+    };
+
 
     return (
         <div id='map-container'>
-            <img src={mapImage} alt='map' />
-            <img src={MapOverlay} alt='overlay' />
-            <div className='picto-flex'>
+            <MapMenu></MapMenu>
+            <img src={mapState.mapImage} alt='map' />
+            <img src={mapOverlay} alt='overlay' onClick={mapClick} />
+            {/* <div className='picto-flex'>
                 <Picto image={PictoGebaeude} id={0} />
                 <Picto image={PictoTraffic} id={1} />
                 <Picto image={PictoStadtGruen} id={2} />
                 <Picto image={PictoWirtschaft} id={3} />
-            </div>
-            <Info pictoId={0} infoId={0} />
-            <Info pictoId={0} infoId={1} />
-            <Info pictoId={0} infoId={2} />
-            <Info pictoId={1} infoId={3} />
-            <Info pictoId={1} infoId={4} />
-            <Info pictoId={1} infoId={5} />
-            <Info pictoId={2} infoId={6} />
-            <Info pictoId={2} infoId={7} />
-            <Info pictoId={2} infoId={8} />
-            <Info pictoId={3} infoId={9} />
-            <Info pictoId={3} infoId={10} />
+            </div> */}
+            <Info categoryId={0} infoId={0} />
+            <Info categoryId={0} infoId={1} />
+            <Info categoryId={1} infoId={2} />
+            <Info categoryId={1} infoId={3} />
+            <Info categoryId={1} infoId={4} />
+            <Info categoryId={2} infoId={5} />
+            <Info categoryId={2} infoId={6} />
+            <Info categoryId={2} infoId={7} />
+            <Info categoryId={3} infoId={8} />
+            <Info categoryId={3} infoId={9} />
+            <Info categoryId={3} infoId={10} />
+            <Details />
         </div>
     );
 }

@@ -1,10 +1,21 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {
     MapDefault,
-    MapGebaeude,
-    MapTraffic,
-    MapStadtGruen,
-    MapWirtschaft,
+    OverlayGebaeude,
+    OverlayAlteWege,
+    OverlayStadtGruen,
+    OverlayWirtschaft,
+    OverlayStudentischesWohnen,
+    OverlayKuenstlerResidenz,
+    OverlayEinHof,
+    OverlayNachbarschaftOhneAutos,
+    OverlayRaumVsBaum,
+    OverlayMehrGrueneDaecher,
+    OverlayUrbanerWaldgarten,
+    OverlayUrbanGardening,
+    OverlayHochschulStandortNord,
+    OverlayKlassikerFahrradladen,
+    OverlayHochschulStandortSued,
 } from '../assets';
 
 const MapContext = React.createContext();
@@ -16,31 +27,78 @@ const initialMapState = {
         { isActive: false },
         { isActive: false },
     ],
+    categoryStates: [
+        { isActive: false },
+        { isActive: false },
+        { isActive: false },
+        { isActive: false },
+    ],
     mapImage: MapDefault,
+    mapOverlay: null,
     isModalOpen: false,
+    isDetailsOpen: false,
     modalText: 'Lorem Ipsum',
+    category: null,
+    details: null,
 };
-const mapImages = [MapGebaeude, MapTraffic, MapStadtGruen, MapWirtschaft];
+// const categoryOverlays = [MapGebaeude, MapTraffic, MapStadtGruen, MapWirtschaft];
+const categoryOverlays = [
+    OverlayGebaeude,
+    OverlayAlteWege,
+    OverlayStadtGruen,
+    OverlayWirtschaft,
+];
+const detailsOverlays = [
+    OverlayStudentischesWohnen,
+    OverlayKuenstlerResidenz,
+    OverlayEinHof,
+    OverlayNachbarschaftOhneAutos,
+    OverlayRaumVsBaum,
+    OverlayMehrGrueneDaecher,
+    OverlayUrbanerWaldgarten,
+    OverlayUrbanGardening,
+    OverlayHochschulStandortNord,
+    OverlayKlassikerFahrradladen,
+    OverlayHochschulStandortSued,
+];
 
 export const MapProvider = ({ children }) => {
     const [mapState, setMapState] = useState(initialMapState);
 
-    const handleClick = (id) => {
-        const newStates = mapState.pictoStates.map((state, pictoId) => {
-            return pictoId === id ? { isActive: true } : { isActive: false };
-        });
+    // const handleClick = (id) => {
+    //     const newStates = mapState.pictoStates.map((state, pictoId) => {
+    //         return pictoId === id ? { isActive: true } : { isActive: false };
+    //     });
+    //     setMapState({
+    //         ...mapState,
+    //         mapOverlay: categoryOverlays[id],
+    //         pictoStates: newStates,
+    //     });
+    // };
+
+    // const setModal = (state, text) => {
+    //     setMapState({
+    //         ...mapState,
+    //         isModalOpen: state,
+    //         modalText: text,
+    //     });
+    // };
+    const setCategory = (id) => {
+        // console.log('setCategory id', id);
         setMapState({
             ...mapState,
-            mapImage: mapImages[id],
-            pictoStates: newStates,
+            category: id,
+            mapOverlay: categoryOverlays[id],
         });
     };
-
-    const setModal = (state, text) => {
+    const setDetails = (infoId) => {
         setMapState({
             ...mapState,
-            isModalOpen: state,
-            modalText: text,
+            details: infoId,
+            mapOverlay:
+                infoId !== null
+                    ? detailsOverlays[infoId]
+                    : categoryOverlays[mapState.category],
         });
     };
 
@@ -48,8 +106,10 @@ export const MapProvider = ({ children }) => {
         <MapContext.Provider
             value={{
                 mapState,
-                handleClick,
-                setModal,
+                // handleClick,
+                // setModal,
+                setDetails,
+                setCategory,
             }}
         >
             {children}

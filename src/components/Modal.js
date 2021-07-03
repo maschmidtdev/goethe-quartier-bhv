@@ -14,10 +14,10 @@ export default function Modal() {
     return (
         <div className={`${isOpen ? 'modal open' : 'modal'}`}>
             <div className='modal-content'>
-                <div class='close-btn'>
+                <div className='close-btn'>
                     <strong onClick={() => setModal(false)}>X</strong>
                 </div>
-                <p>{text}</p>
+                <div dangerouslySetInnerHTML={{ __html: text }}></div>
             </div>
         </div>
     );

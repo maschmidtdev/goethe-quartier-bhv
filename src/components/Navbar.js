@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
+// import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { useNavContext } from '../context/nav_context';
 
 export default function Navbar() {

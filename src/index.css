@@ -103,7 +103,7 @@ nav ul > li > a {
     height: 60px;
     border-radius: 15%;
     border: 2px solid black;
-    right: 10vw;
+    right: 30px;
     top: 20px;
     /* background-color: var(--primaryLightColor); */
     background-color: white;
@@ -168,6 +168,64 @@ nav ul > li > a {
     cursor: pointer;
 }
 
+.map-menu {
+    width: 100vw;
+    height: 100vh;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+}
+.map-menu.hide {
+    transform: translateY(-100%);
+}
+
+.map-menu h1 {
+    font-size: 60px;
+    color: mediumpurple;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.map-menu h3,
+.map-menu p {
+    text-align: left;
+    padding: 0.2rem;
+    padding-left: 1rem;
+}
+
+.categories-flex {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.category-container {
+    width: 19vw;
+    height: auto;
+    padding: 1rem;
+}
+.category-container:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.category-container img {
+    width: 100%;
+    height: auto;
+}
+
+.category-container h3 {
+    color: mediumpurple;
+}
+
 #map-container {
     position: relative;
     text-align: center;
@@ -179,12 +237,13 @@ nav ul > li > a {
     /* width: 100vw;
     height: auto; */
     height: 100%;
-    /* width: auto; */
+    width: auto;
     position: absolute;
     top: 0;
-    left: -9999px;
+    left: 0;
+    /* left: -9999px;
     right: -9999px;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 
 #map-container img.active {
@@ -258,6 +317,7 @@ nav ul > li > a {
     position: absolute;
     padding: 0.5rem;
     text-align: center;
+    /* border: 2px solid red; */
 }
 .info:hover {
     cursor: pointer;
@@ -271,77 +331,94 @@ nav ul > li > a {
     left: 20.1%;
     width: 8.7vw;
     height: 3.5%;
-    /* border: 2px solid red; */
 }
 /* Gebäude */
-.info:nth-of-type(5) {
-    width: 8.6vw;
-    height: 7.2%;
-    top: 48%;
-    left: 22.7%;
+.info:nth-of-type(2) {
+    top: 28.5vh;
+    left: 99.3vh;
+    width: 19.5vh;
+    height: 12.5%;
 }
-.info:nth-of-type(6) {
-    width: 11.5vw;
-    height: 6%;
-    top: 39.5%;
-    left: 70%;
-}
-.info:nth-of-type(7) {
-    width: 12.5vw;
-    height: 8.8%;
-    top: 24%;
-    left: 72%;
+.info:nth-of-type(3) {
+    top: 71vh;
+    left: 99.3vh;
+    width: 19.5vh;
+    height: 8.5%;
 }
 /* Verkehr & Wege */
-.info:nth-of-type(8) {
-    width: 7.5vw;
-    height: 4%;
-    top: 45%;
-    left: 23%;
+.info:nth-of-type(4) {
+    top: 32.5vh;
+    left: 98.7vh;
+    width: 19.5vh;
+    height: 6.5%;
 }
-.info:nth-of-type(9) {
-    top: 35%;
-    left: 20.1%;
-    width: 8.7vw;
-    height: 3.5%;
+
+.info:nth-of-type(5) {
+    top: 40.5vh;
+    left: 98.7vh;
+    width: 19.5vh;
+    height: 10%;
 }
-.info:nth-of-type(10) {
-    top: 35.2%;
-    left: 74%;
-    width: 9.4vw;
-    height: 3.5%;
+.info:nth-of-type(6) {
+    top: 51.5vh;
+    left: 98.7vh;
+    width: 19.5vh;
+    height: 8.6%;
 }
 /* Wirtschaft */
-.info:nth-of-type(11) {
-    top: 27.5%;
-    left: 19.1%;
-    width: 9vw;
-    height: 8.5%;
+.info:nth-of-type(7) {
+    top: 18.8vh;
+    left: 99vh;
+    width: 19.5vh;
+    height: 10%;
 }
-.info:nth-of-type(12) {
-    top: 39.3%;
-    left: 19.3%;
-    width: 9.5vw;
-    height: 8.5%;
+.info:nth-of-type(8) {
+    top: 31.8vh;
+    left: 99vh;
+    width: 19.5vh;
+    height: 10.1%;
 }
-.info:nth-of-type(13) {
-    top: 34.5%;
-    left: 74%;
-    width: 11.8vw;
-    height: 3.5%;
+.info:nth-of-type(9) {
+    top: 44.6vh;
+    left: 99vh;
+    width: 19.5vh;
+    height: 10.2%;
 }
 /* Stadt Grün */
-.info:nth-of-type(14) {
-    top: 35.5%;
-    left: 68.5%;
-    width: 11.4vw;
-    height: 3.5%;
+.info:nth-of-type(10) {
+    top: 13vh;
+    left: 98.7vh;
+    width: 23vh;
+    height: 10.2%;
 }
-.info:nth-of-type(15) {
-    top: 82%;
-    left: 36.8%;
-    width: 7vw;
-    height: 3.3%;
+.info:nth-of-type(11) {
+    top: 36vh;
+    left: 98.7vh;
+    width: 23vh;
+    height: 10.2%;
+}
+.info:nth-of-type(12) {
+    top: 82.5vh;
+    left: 98.7vh;
+    width: 23vh;
+    height: 10.2%;
+}
+
+.details {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    /* right: -100%; */
+    right: -50vw;
+    transition: transform 0.3s ease;
+    z-index: 15;
+    border: 1px solid red;
+    background-color: white;
+}
+
+.details.open {
+    transform: translateX(-100%);
 }
 
 .modal {
@@ -387,6 +464,8 @@ footer {
     color: white;
     padding: 0.8rem;
 }
+
+/* =============== MEDIA QUERIES =================== */
 
 @media screen and (max-height: 720px) {
     .picto-container {

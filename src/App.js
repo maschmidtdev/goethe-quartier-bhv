@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Hero from './components/Hero';
+// import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Hamburger from './components/Hamburger';
 import Home from './pages/Home';
 import Map from './pages/Map';
