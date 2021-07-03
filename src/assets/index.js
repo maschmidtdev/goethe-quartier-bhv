@@ -28,6 +28,10 @@ import OverlayUrbanGardening from './overlays/overlay-urban-gardening.png';
 import OverlayHochschulStandortNord from './overlays/overlay-hochschulstandort-nord.png';
 import OverlayKlassikerFahrradladen from './overlays/overlay-klassiker-fahrradladen.png';
 import OverlayHochschulStandortSued from './overlays/overlay-hochschulstandort-sued.png';
+import StudentischesWohnen_1 from './studentisches-wohnen-1-4.png';
+import StudentischesWohnen_2 from './studentisches-wohnen-2-4.png';
+import StudentischesWohnen_3 from './studentisches-wohnen-3-4.png';
+import StudentischesWohnen_4 from './studentisches-wohnen-4-4.png';
 
 export {
     // PictoGebaeude,
@@ -60,4 +64,8 @@ export {
     OverlayHochschulStandortNord,
     OverlayKlassikerFahrradladen,
     OverlayHochschulStandortSued,
+    StudentischesWohnen_1,
+    StudentischesWohnen_2,
+    StudentischesWohnen_3,
+    StudentischesWohnen_4,
 };
