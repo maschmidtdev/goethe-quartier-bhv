@@ -171,15 +171,16 @@ nav ul > li > a {
 .map-menu {
     width: 100vw;
     height: 100vh;
-    transition: transform 0.3s ease;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     background-color: white;
+    transition: opacity 0.3s linear, transform 0.3s ease;
 }
 .map-menu.hide {
-    transform: translateY(-100%);
+    opacity: 0;
+    transform: translateY(-100vh);
 }
 
 .map-menu h1 {
@@ -413,7 +414,7 @@ nav ul > li > a {
     right: -50vw;
     transition: transform 0.3s ease;
     z-index: 15;
-    border: 1px solid red;
+    border: 3px solid rgb(221, 243, 96);
     background-color: white;
 }
 
