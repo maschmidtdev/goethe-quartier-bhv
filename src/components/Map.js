@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useMapContext } from '../context/map_context';
 // import Picto from '../components/Picto';
 import MapMenu from '../components/MapMenu';
+import MapPulldown from '../components/MapPulldown';
 import Info from '../components/Info';
 import Details from '../components/Details';
 // import {
@@ -23,7 +24,6 @@ export default function Map() {
     const mapClick = () => {
         setDetails(null); // remove details window;
     };
-
 
     return (
         <div id='map-container'>
@@ -48,6 +48,7 @@ export default function Map() {
             <Info categoryId={3} infoId={9} />
             <Info categoryId={3} infoId={10} />
             <Details />
+            <MapPulldown />
         </div>
     );
 }

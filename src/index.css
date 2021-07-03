@@ -182,6 +182,42 @@ nav ul > li > a {
     opacity: 0;
     transform: translateY(-100vh);
 }
+.map-pulldown {
+    width: 100px;
+    height: 40px;
+    transform: translateY(-25px);
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    z-index: 1;
+    opacity: 0;
+    background-color: white;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border: 1px solid black;
+    padding: 1.5rem;
+}
+.map-pulldown:hover {
+    cursor: pointer;
+}
+.map-pulldown.show {
+    transform: unset;
+    opacity: 1;
+}
+.pulldown-line {
+    height: 6px;
+    width: 55%;
+    position: absolute;
+    top: 50%;
+    background-color: black;
+}
+.pulldown-line:nth-child(1) {
+    left: 0;
+    transform: rotate(30deg);
+}
+.pulldown-line:nth-child(2) {
+    right: 0;
+    transform: rotate(-30deg);
+}
 
 .map-menu h1 {
     font-size: 60px;

@@ -102,6 +102,15 @@ export const MapProvider = ({ children }) => {
         });
     };
 
+    const pullDown = () => {
+        setMapState({
+            ...mapState,
+            details: null,
+            category: null,
+            mapOverlay: null,
+        });
+    };
+
     return (
         <MapContext.Provider
             value={{
@@ -110,6 +119,7 @@ export const MapProvider = ({ children }) => {
                 // setModal,
                 setDetails,
                 setCategory,
+                pullDown,
             }}
         >
             {children}

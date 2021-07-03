@@ -8,11 +8,12 @@ import {
 } from './details';
 
 export default function Details() {
-    const { mapState, setDetails } = useMapContext();
+    const { mapState } = useMapContext();
     const [isOpen, setIsOpen] = useState(mapState.isDetailsOpen);
     // const [text, setText] = useState(mapState.modalText);
 
     useEffect(() => {
+        console.log('USEEFFECT');
         setIsOpen(mapState.details !== null);
     }, [mapState.details]);
 
