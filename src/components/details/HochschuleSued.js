@@ -1,12 +1,11 @@
 import React from 'react';
-import Video from '../../components/Video';
-import { VideoKuenstlerResidenz } from '../../assets';
+import { ImgHochschuleSued } from '../../assets';
 
 export default function HochSchuleSued() {
     return (
         <div className='details-content'>
-            <div className='details-flex-col'>
-                {/* <Video src={VideoKuenstlerResidenz} auto={true} /> */}
+            <div className='hochschule'>
+                <img src={ImgHochschuleSued} alt='' />
                 <h2>Hochschulstandort Süd</h2>
                 <p>
                     Hochschulstandort Süd Im Norden das Soziale. Im Süden

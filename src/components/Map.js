@@ -5,7 +5,11 @@ import MapMenu from '../components/MapMenu';
 import MapPulldown from '../components/MapPulldown';
 import Info from '../components/Info';
 import Details from '../components/Details';
-import { OverlayStadtGruenMap } from '../assets';
+import {
+    OverlayStadtGruenMap,
+    OverlayHochschuleNord,
+    OverlayHochschuleSued,
+} from '../assets';
 
 export default function Map() {
     const { mapState, setDetails } = useMapContext();
@@ -46,6 +50,12 @@ export default function Map() {
             <MapPulldown />
             {mapState.details === 5 && (
                 <img src={OverlayStadtGruenMap} alt='' onClick={mapClick} />
+            )}
+            {mapState.details === 8 && (
+                <img src={OverlayHochschuleNord} alt='' onClick={mapClick} />
+            )}
+            {mapState.details === 10 && (
+                <img src={OverlayHochschuleSued} alt='' onClick={mapClick} />
             )}
         </div>
     );

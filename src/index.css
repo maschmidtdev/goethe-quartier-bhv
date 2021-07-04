@@ -243,6 +243,7 @@ nav ul > li > a {
 .map-menu.hide {
     opacity: 0;
     transform: translateY(-100vh);
+    z-index: -10;
 }
 .map-pulldown {
     width: 100px;
@@ -481,6 +482,15 @@ nav ul > li > a {
     max-width: 100%;
     height: 100%;
     object-fit: fill;
+}
+.hochschule img {
+    max-width: 40%;
+    object-fit: fill;
+    float: left;
+    padding: 1rem;
+}
+.hochschule p {
+    padding: 1rem;
 }
 .details-flex-col p {
     font-size: medium;

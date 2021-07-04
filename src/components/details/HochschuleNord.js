@@ -1,12 +1,11 @@
 import React from 'react';
-import Video from '../../components/Video';
-import { VideoKuenstlerResidenz } from '../../assets';
+import { ImgHochschuleNord } from '../../assets';
 
 export default function HochSchulNord() {
     return (
         <div className='details-content'>
-            <div className='details-flex-col'>
-                {/* <Video src={VideoKuenstlerResidenz} auto={true} /> */}
+            <div className='hochschule'>
+                <img src={ImgHochschuleNord} alt='' />
                 <h2>Hochschulstandort Nord</h2>
                 <p>
                     Eine zentrale Erkenntnis unserer Analyse ist die Abwesenheit
