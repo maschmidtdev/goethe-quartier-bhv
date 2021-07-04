@@ -8,6 +8,7 @@ import {
     RaumVsBaum,
     MehrGrueneDaecher,
     UrbanGardening,
+    UrbanerWaldgarten,
 } from './details';
 
 export default function Details() {
@@ -34,6 +35,8 @@ export default function Details() {
                 return <RaumVsBaum />;
             case 5:
                 return <MehrGrueneDaecher />;
+            case 6:
+                return <UrbanerWaldgarten />;
             case 7:
                 return <UrbanGardening />;
 

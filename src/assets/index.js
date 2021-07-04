@@ -3,6 +3,7 @@ import VideoKuenstlerResidenz from './video/kuenstlerresidenz.mp4';
 import VideoEinHof from './video/ein-hof.mp4';
 import VideoNachbarschaftOhneAutos from './video/nachbarschaft-ohne-autos.mp4';
 import VideoRaumVsBaum from './video/raum-vs-baum.mp4';
+import VideoUrbanerWaldgarten from './video/urbaner-waldgarten.mp4';
 import MapDefault from './map.png';
 import CategoryAlteWege from './category-alte-wege.png';
 import CategoryGebaude from './category-gebaeude.png';
@@ -14,6 +15,7 @@ import OverlayStadtGruen from './overlays/overlay-stadt-gruen.png';
 import OverlayStadtGruenMap from './overlays/overlay-stadt-gruen-map.png';
 import OverlayWirtschaft from './overlays/overlay-wirtschaft.png';
 import DetailsUrbanGardening from './details-urban-gardening.png';
+import DetailsUrbanGardening_2 from './details-urban-gardening-2.png';
 import OverlayStudentischesWohnen from './overlays/overlay-studentisches-wohnen.png';
 import OverlayKuenstlerResidenz from './overlays/overlay-kuenstler-residenz.png';
 import OverlayEinHof from './overlays/overlay-ein-hof.png';
@@ -38,6 +40,7 @@ export {
     VideoEinHof,
     VideoNachbarschaftOhneAutos,
     VideoRaumVsBaum,
+    VideoUrbanerWaldgarten,
     CategoryAlteWege,
     CategoryGebaude,
     CategoryStadtGruen,
@@ -48,6 +51,7 @@ export {
     OverlayStadtGruenMap,
     OverlayWirtschaft,
     DetailsUrbanGardening,
+    DetailsUrbanGardening_2,
     OverlayStudentischesWohnen,
     OverlayKuenstlerResidenz,
     OverlayEinHof,

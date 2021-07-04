@@ -5,6 +5,7 @@ import Nachbarschaft from './Nachbarschaft';
 import RaumVsBaum from './RaumVsBaum';
 import MehrGrueneDaecher from './MehrGrueneDaecher';
 import UrbanGardening from './UrbanGardening';
+import UrbanerWaldgarten from './UrbanerWaldgarten';
 
 export {
     StudentischesWohnen,
@@ -14,4 +15,5 @@ export {
     RaumVsBaum,
     MehrGrueneDaecher,
     UrbanGardening,
+    UrbanerWaldgarten,
 };

@@ -177,8 +177,6 @@ nav ul > li > a {
 .video-container.clicked > h2 {
     opacity: 0;
 }
-.video-container > video {
-}
 .video-container > video:hover {
     cursor: pointer;
 }
@@ -498,7 +496,36 @@ nav ul > li > a {
     max-width: 50%;
 }
 
-/* EIN HOF FÜR ALLE */
+/* URBAN GARDENING */
+.text-container h3 {
+    margin: 0.5rem;
+}
+.text-container img {
+    float: left;
+    max-width: 50%;
+    padding: 1rem;
+}
+img.urbanGarden-1 {
+    width: 90%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.urbanGarden-2 {
+    position: relative;
+    width: 100%;
+}
+.urbanGarden-2 img {
+    width: 100vw;
+    height: 100%;
+    object-fit: contain;
+}
+.urbanGarden-2 img:nth-child(2) {
+    position: absolute;
+    width: 100vw;
+    right: 0;
+    top: 0;
+}
 
 /* PAGINATION */
 
