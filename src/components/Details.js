@@ -7,8 +7,11 @@ import {
     Nachbarschaft,
     RaumVsBaum,
     MehrGrueneDaecher,
-    UrbanGardening,
     UrbanerWaldgarten,
+    UrbanGardening,
+    HochschuleNord,
+    Fahrradladen,
+    HochschuleSued,
 } from './details';
 
 export default function Details() {
@@ -39,6 +42,12 @@ export default function Details() {
                 return <UrbanerWaldgarten />;
             case 7:
                 return <UrbanGardening />;
+            case 8:
+                return <HochschuleNord />;
+            case 9:
+                return <Fahrradladen />;
+            case 10:
+                return <HochschuleSued />;
 
             default:
                 break;
