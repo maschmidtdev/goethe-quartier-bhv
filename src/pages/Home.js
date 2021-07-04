@@ -3,13 +3,16 @@ import { Videosource } from '../assets/index';
 import Video from '../components/Video';
 
 export default function Home() {
-    const [page, setPage] = useState(1);
+    const [page, setPage] = useState(0);
+    const [isShow, setIsShow] = useState(false);
 
     const getContent = (page) => {
         switch (page) {
             case 1:
                 return (
-                    <div className='home-flex'>
+                    <div
+                        className={`${isShow ? 'home-flex show' : 'home-flex'}`}
+                    >
                         <p>
                             Was passiert, wenn sich zwei MasterstudentInnern der
                             Architektur mit dem
@@ -23,7 +26,9 @@ export default function Home() {
                 );
             case 2:
                 return (
-                    <div className='home-flex'>
+                    <div
+                        className={`${isShow ? 'home-flex show' : 'home-flex'}`}
+                    >
                         <p>
                             Wir wollen Lust machen auf einen{' '}
                             <strong>Lebensraum</strong> mit
@@ -43,7 +48,9 @@ export default function Home() {
                 );
             case 3:
                 return (
-                    <div className='home-flex'>
+                    <div
+                        className={`${isShow ? 'home-flex show' : 'home-flex'}`}
+                    >
                         <p>
                             Wir zeigen dir Projekte und Ideen, die das Quartier
                             in ihrer{' '}
@@ -60,11 +67,22 @@ export default function Home() {
         }
     };
 
+    const changePage = (page) => {
+        setIsShow(false);
+        setPage(page);
+        setTimeout(() => {
+            setIsShow(true);
+        }, 1000);
+    };
+
     return (
         <div id='home'>
             {/* <h1>Home</h1> */}
-            {/* <Video src={Videosource} auto={false} /> */}
-            {getContent(page)}
+            <div className='home-video'>
+                <Video src={Videosource} auto={false} changePage={changePage} />
+            </div>
+            {/* {getContent(1)} */}
+            {page > 0 && getContent(page)}
         </div>
     );
 }

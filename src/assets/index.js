@@ -1,4 +1,5 @@
-import Videosource from './video/start.mp4';
+// import Videosource from './video/start.mp4';
+import Videosource from './video/video2.m4v';
 import VideoKuenstlerResidenz from './video/kuenstlerresidenz.mp4';
 import VideoEinHof from './video/ein-hof.mp4';
 import VideoNachbarschaftOhneAutos from './video/nachbarschaft-ohne-autos.mp4';

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Video({ src, auto }) {
+export default function Video({ src, auto, changePage }) {
     const [isClicked, setIsClicked] = useState(false);
 
     const handleClick = (target) => {
@@ -18,7 +18,7 @@ export default function Video({ src, auto }) {
         if (auto) {
             console.log('[auto]', auto);
             return (
-                <video autoPlay>
+                <video autoPlay onClick={(e) => handleClick(e.target)}>
                     <source src={src} type='video/mp4' />
                 </video>
             );
@@ -27,7 +27,10 @@ export default function Video({ src, auto }) {
         return (
             <>
                 <h2>Klicken zum Abspielen</h2>
-                <video onClick={(e) => handleClick(e.target)}>
+                <video
+                    onClick={(e) => handleClick(e.target)}
+                    onEnded={() => changePage(1)}
+                >
                     <source src={src} type='video/mp4' />
                 </video>
             </>
