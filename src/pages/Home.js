@@ -4,7 +4,7 @@ import Video from '../components/Video';
 
 export default function Home() {
     return (
-        <div id='hero'>
+        <div id='home'>
             {/* <h1>Home</h1> */}
             <Video src={Videosource} />
         </div>

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { useMapContext } from '../../context/map_context';
+import React, { useState } from 'react';
 import {
     StudentischesWohnen_1,
     StudentischesWohnen_2,
@@ -8,9 +7,6 @@ import {
 } from '../../assets';
 
 export default function StudentischesWohnen() {
-    // const { mapState, setModal } = useMapContext();
-    // const [isOpen, setIsOpen] = useState(mapState.isModalOpen);
-    // const [text, setText] = useState(mapState.modalText);
     const [page, setPage] = useState(1);
 
     const setContent = (page) => {
@@ -129,11 +125,6 @@ export default function StudentischesWohnen() {
         }
         setPage(newPage);
     };
-
-    // useEffect(() => {
-    //     setText(mapState.modalText);
-    //     setIsOpen(mapState.isModalOpen);
-    // }, [mapState.isModalOpen, mapState.modalText]);
 
     return (
         <div className='details-content studentisches-wohnen'>

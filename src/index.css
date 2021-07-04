@@ -142,31 +142,48 @@ nav ul > li > a {
     transform: rotate(-45deg);
 }
 
+/* =============== HOME =============== */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#home .video-container {
+    width: 100%;
+}
+#home .video-container video {
+    width: 100%;
+}
+
+/* ===============  VIDEO ===============  */
 .video-container {
     position: relative;
     width: 100%;
 }
-.video-container h1 {
+.video-container > h1,
+.video-container > h2 {
     position: absolute;
+    width: 100%;
     top: 49%;
-    left: 40%;
+    left: 0;
+    text-align: center;
     transition: opacity 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.5);
 }
-.video-container.clicked h1 {
+.video-container.clicked > h1,
+.video-container.clicked > h2 {
     opacity: 0;
 }
-
 .video-container > video {
-    /* width: 100%; */
-    height: 100%;
-    /* width: auto;
-    height: auto; */
 }
-
 .video-container > video:hover {
     cursor: pointer;
 }
 
+/* =============== MAP MENU =============== */
 .map-menu {
     width: 100vw;
     height: 100vh;
@@ -187,7 +204,7 @@ nav ul > li > a {
     transform: translateY(-25px);
     position: absolute;
     top: 0;
-    left: 40vw;
+    left: 25vw;
     z-index: 1;
     opacity: 0;
     background-color: white;
@@ -235,13 +252,13 @@ nav ul > li > a {
     padding-left: 1rem;
 }
 
+/* =============== CATEGORY =============== */
 .categories-flex {
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .category-container {
     width: 19vw;
     height: auto;
@@ -252,23 +269,21 @@ nav ul > li > a {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
-
 .category-container img {
     width: 100%;
     height: auto;
 }
-
 .category-container h3 {
     color: mediumpurple;
 }
 
+/* =============== MAP =============== */
 #map-container {
     position: relative;
     text-align: center;
     overflow-x: hidden;
     height: 100vh;
 }
-
 #map-container > img {
     /* width: 100vw;
     height: auto; */
@@ -281,73 +296,11 @@ nav ul > li > a {
     right: -9999px;
     margin: 0 auto; */
 }
-
 #map-container img.active {
     opacity: 1;
 }
 
-.picto-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 15vw;
-    height: 100%;
-}
-
-.picto-container {
-    z-index: 10;
-}
-.picto-container.close {
-    cursor: pointer;
-}
-.picto-container:hover {
-    cursor: pointer;
-}
-
-.picto-container > img {
-    /* width: 7vw;
-    height: auto; */
-    height: 14vh;
-    width: auto;
-    /* opacity: 0.7; */
-    transition: opacity 0.5s ease;
-    background-color: white;
-    border-radius: 50%;
-    border: 1px solid darkslateblue;
-    box-shadow: 7px 7px rgba(0, 0, 0, 0.5);
-}
-
-.picto-container > img:hover {
-    border: 3px solid darkslateblue;
-}
-
-.picto-container > h4 {
-    position: relative;
-    /* width: 130%;
-    left: -15%; */
-    text-align: center;
-    padding: 0.2rem;
-    color: darkslateblue;
-    background-color: white;
-    border: 1px solid darkslateblue;
-    border-radius: 5px;
-}
-
-.picto-container:nth-child(2) {
-    top: 8%;
-}
-.picto-container:nth-child(3) {
-    top: 29%;
-}
-
-.picto-container:nth-child(4) {
-    top: 50%;
-}
-.picto-container:nth-child(5) {
-    top: 72%;
-}
-
+/*  =============== INFO  =============== */
 .info {
     display: none;
     position: absolute;
@@ -360,7 +313,6 @@ nav ul > li > a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(0, 0, 0, 0.5);
 }
-
 .info.active {
     display: block;
     top: 35%;
@@ -440,82 +392,55 @@ nav ul > li > a {
     height: 10.2%;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-}
-
-.modal p {
-    padding: 0 1.5rem;
-}
-
-.modal.open {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 50;
-}
-
-.modal .modal-content {
-    width: 50%;
-    height: 50%;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.modal .close-btn {
-    font-size: x-large;
-    padding: 0.5rem;
-    padding-right: 1rem;
-    text-align: right;
-    color: red;
-    cursor: pointer;
-}
-
-footer {
-    height: 50px;
-    background-color: darkslategray;
-    color: white;
-    padding: 0.8rem;
-}
-
-/* =============== DETAILS =================== */
-
+/* ================= DETAILS =================== */
 .details {
     position: absolute;
-    width: 50vw;
+    width: 60vw;
     height: 100vh;
     top: 0;
     /* right: -100%; */
-    right: -50vw;
+    right: -60vw;
     transition: transform 0.3s ease;
     z-index: 15;
     border: 3px solid rgb(221, 243, 96);
     background-color: white;
 }
-
 .details.open {
     transform: translateX(-100%);
 }
-
 .details-content {
     height: 100%;
 }
+.details-content > div > h2 {
+    flex-basis: 6%;
+    margin: 0.5rem 0;
+    color: mediumpurple;
+}
+.details-content p {
+    text-align: justify;
+    line-height: 1.4rem;
+}
+
+.details-content .video-container {
+    /* background-color: red; */
+    position: relative;
+    min-height: 100px;
+    flex-basis: 0%;
+    flex: 1;
+}
+.details-content .video-container video {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
 
 /* STUDENTISCHES WOHNEN */
-
 .details-content.studentisches-wohnen {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-
 .details-content.studentisches-wohnen > img.dachaufsicht {
     /* max-width: 50%; */
     /* height: auto; */
@@ -524,12 +449,9 @@ footer {
     object-fit: cover;
     flex-grow: 1;
 }
-
-.details-content.studentisches-wohnen > p {
-    text-align: left;
+.details-content.studentisches-wohnen p {
     padding: 0 1rem;
 }
-
 .details-content .container {
     position: relative;
     height: calc(100% - 60px);
@@ -557,48 +479,22 @@ footer {
 }
 .details-content .container p {
     padding: 0 1rem;
-    text-align: left;
 }
-
-/* KÜNSTLER RESIDENZ */
-.kuenstlerresidenz {
+.details-flex-col {
     display: flex;
-    height: 80%;
+    height: 98%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
 }
-
-.kuenstlerresidenz .video-container {
-    flex: 1;
-    /* background-color: red; */
-}
-.kuenstlerresidenz .video-container .video-child {
-    width: 90%;
-    height: 90%;
-    background-color: green;
-}
-.kuenstlerresidenz .video-container video {
-    width: 100%;
-    height: 100%;
-    /* object-fit: scale-down; */
-    /* object-fit: contain; */
-    /* object-fit: cover; */
-    object-fit: fill;
-}
-
-.kuenstlerresidenz h2 {
-    flex-basis: 6%;
-    margin: 1rem 0;
-}
-
-.kuenstlerresidenz p {
+.details-flex-col p {
     font-size: medium;
     padding: 0 2rem;
-    text-align: left;
     flex: 0 1 auto;
 }
+
+/* EIN HOF FÜR ALLE */
 
 /* PAGINATION */
 

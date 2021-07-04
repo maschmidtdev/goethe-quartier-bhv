@@ -20,7 +20,7 @@ export default function Video({ src }) {
                 isClicked ? 'video-container clicked' : 'video-container'
             }`}
         >
-            <h1>Klicken zum Abspielen</h1>
+            <h2>Klicken zum Abspielen</h2>
             <video onClick={(e) => handleClick(e.target)}>
                 <source src={src} type='video/mp4' />
             </video>

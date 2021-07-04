@@ -1,45 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import { useMapContext } from '../../context/map_context';
-import { VideoKuenstlerResidenz } from '../../assets';
+import React from 'react';
 import Video from '../../components/Video';
+import { VideoKuenstlerResidenz } from '../../assets';
 
 export default function KuenstlerResidenz() {
-    // const { mapState, setModal } = useMapContext();
-    // const [isOpen, setIsOpen] = useState(mapState.isModalOpen);
-    // const [text, setText] = useState(mapState.modalText);
-
-    // useEffect(() => {
-    //     setText(mapState.modalText);
-    //     setIsOpen(mapState.isModalOpen);
-    // }, [mapState.isModalOpen, mapState.modalText]);
-
     return (
         <div className='details-content'>
-            <div className='kuenstlerresidenz'>
+            <div className='details-flex-col'>
                 <Video src={VideoKuenstlerResidenz} />
-                {/* <div className='video-container'>
-                    <video>
-                        <source src={VideoKuenstlerResidenz} type='video/mp4' />
-                    </video>
-                </div> */}
                 <h2>Künstler-Residenz</h2>
                 <p>
-                    Künstler-Residenz Das Gebäude an der Ecke
-                    Kistnerstraße/Körnerstraße fällt derzeit auf durch seine
-                    verbaute und zugenagelte Erdgeschosszone. Was auch immer man
-                    sich bei dem Umbau Ende des 20. Jahrhunderts hierbei gedacht
-                    hat, die unproportionalen Öffnungen und die schlecht
-                    ausgeführte Riemchenfassade zeigen, wie achtlos man in
-                    Vergangenheit mit der historischen Bausubstanz umgegangen
-                    ist. Die Lage des Gebäudes flankiert den süd-westlichen
-                    Bereich des Quartiers, dem wir mit der Überschrift
-                    Kunst/Kultur eine neue Bedeutung und damit einen ersten
-                    Schritt zur Neuidentifikation zuschreiben möchten. Neben dem
-                    neuen künstlerischen Hochschulstandord Süd und dem vorhanden
-                    „Rockcenter“ mit Konzertlocation und Proberäumen ergänzt
-                    dieses Konzept die Bandweite des Angebotes. Das Konzept der
-                    Künstlerresidenz ist keine Neuerfindung, darf aber in diesem
-                    Kontext neu gedacht und adaptiert werden. Die Grundidee ist,
+                    Das Gebäude an der Ecke Kistnerstraße/Körnerstraße fällt
+                    derzeit auf durch seine verbaute und zugenagelte
+                    Erdgeschosszone. Was auch immer man sich bei dem Umbau Ende
+                    des 20. Jahrhunderts hierbei gedacht hat, die
+                    unproportionalen Öffnungen und die schlecht ausgeführte
+                    Riemchenfassade zeigen, wie achtlos man in Vergangenheit mit
+                    der historischen Bausubstanz umgegangen ist. Die Lage des
+                    Gebäudes flankiert den süd-westlichen Bereich des Quartiers,
+                    dem wir mit der Überschrift Kunst/Kultur eine neue Bedeutung
+                    und damit einen ersten Schritt zur Neuidentifikation
+                    zuschreiben möchten. Neben dem neuen künstlerischen
+                    Hochschulstandord Süd und dem vorhanden „Rockcenter“ mit
+                    Konzertlocation und Proberäumen ergänzt dieses Konzept die
+                    Bandweite des Angebotes. Das Konzept der Künstlerresidenz
+                    ist keine Neuerfindung, darf aber in diesem Kontext neu
+                    gedacht und adaptiert werden. Die Grundidee ist,
                     KünstlerInnen von überall in die Stadt zu holen und ihnen
                     hier einen attraktiven, temporären Wirkungsort zu bieten.
                     Das ist lukrativ für Künstler und ein vielfältiger,

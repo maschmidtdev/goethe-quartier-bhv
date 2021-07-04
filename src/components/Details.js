@@ -4,13 +4,14 @@ import {
     StudentischesWohnen,
     KuenstlerResidenz,
     EinHof,
+    Nachbarschaft,
+    RaumVsBaum,
     UrbanGardening,
 } from './details';
 
 export default function Details() {
     const { mapState } = useMapContext();
     const [isOpen, setIsOpen] = useState(mapState.isDetailsOpen);
-    // const [text, setText] = useState(mapState.modalText);
 
     useEffect(() => {
         console.log('USEEFFECT');
@@ -27,6 +28,10 @@ export default function Details() {
                 return <KuenstlerResidenz />;
             case 2:
                 return <EinHof />;
+            case 3:
+                return <Nachbarschaft />;
+            case 4:
+                return <RaumVsBaum />;
             case 7:
                 return <UrbanGardening />;
 

@@ -6,8 +6,11 @@
 // import MapStadtGruen from './map-stadt-gruen.png';
 // import MapTraffic from './map-traffic.png';
 // import MapWirtschaft from './map-wirtschaft.png';
-import Videosource from './start.mp4';
-import VideoKuenstlerResidenz from './kuenstlerresidenz.mp4';
+import Videosource from './video/start.mp4';
+import VideoKuenstlerResidenz from './video/kuenstlerresidenz.mp4';
+import VideoEinHof from './video/ein-hof.mp4';
+import VideoNachbarschaftOhneAutos from './video/nachbarschaft-ohne-autos.mp4';
+import VideoRaumVsBaum from './video/raum-vs-baum.mp4';
 import MapDefault from './map.png';
 import CategoryAlteWege from './category-alte-wege.png';
 import CategoryGebaude from './category-gebaeude.png';
@@ -46,6 +49,9 @@ export {
     MapDefault,
     Videosource,
     VideoKuenstlerResidenz,
+    VideoEinHof,
+    VideoNachbarschaftOhneAutos,
+    VideoRaumVsBaum,
     CategoryAlteWege,
     CategoryGebaude,
     CategoryStadtGruen,
