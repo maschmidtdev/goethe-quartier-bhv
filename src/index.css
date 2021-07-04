@@ -291,7 +291,7 @@ nav ul > li > a {
     font-size: 60px;
     color: mediumpurple;
     padding: 0.5rem;
-    padding-left: 2rem;
+    padding-left: 5.7vw;
     border-bottom: 1px solid black;
     margin-bottom: 0.5rem;
     text-align: left;
@@ -522,11 +522,14 @@ nav ul > li > a {
 }
 
 .details-content .video-container {
-    /* background-color: red; */
     position: relative;
     min-height: 100px;
     flex-basis: 0%;
     flex: 1;
+}
+.details-content .video-container.black {
+    background-color: black;
+    border-bottom: 3px solid rgb(221, 243, 96);
 }
 .details-content .video-container video {
     width: 100%;

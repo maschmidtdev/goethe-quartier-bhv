@@ -6,7 +6,7 @@ export default function Fahrradladen() {
     return (
         <div className='details-content'>
             <div className='details-flex-col'>
-                <Video src={VideoFahrradladen} auto={true} />
+                <Video src={VideoFahrradladen} auto={true} black={true} />
                 <h2>Revitalisierung durch Gewerbe im Erdgeschoss</h2>
                 <h3> – der Fahrradladen</h3>
                 <p>

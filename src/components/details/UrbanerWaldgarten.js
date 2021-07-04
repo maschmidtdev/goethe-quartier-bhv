@@ -6,7 +6,7 @@ export default function UrbanerWaldgarten() {
     return (
         <div className='details-content'>
             <div className='details-flex-col'>
-                <Video src={VideoUrbanerWaldgarten} auto={true} />
+                <Video src={VideoUrbanerWaldgarten} auto={true} black={true} />
                 <h2>Urbaner Waldgarten</h2>
                 <p>
                     Auch „Mikro-Wald“ genannt beschreibt dieses Projekt neben

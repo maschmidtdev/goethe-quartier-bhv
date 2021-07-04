@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Video({ src, auto, changePage }) {
+export default function Video({ src, auto, changePage, black }) {
     const [isClicked, setIsClicked] = useState(false);
 
     const handleClick = (target) => {
@@ -37,13 +37,27 @@ export default function Video({ src, auto, changePage }) {
         );
     };
 
-    return (
-        <div
-            className={`${
-                isClicked ? 'video-container clicked' : 'video-container'
-            }`}
-        >
-            {getVideo(auto)}
-        </div>
-    );
+    if (black) {
+        return (
+            <div
+                className={`${
+                    isClicked
+                        ? 'video-container black clicked'
+                        : 'video-container black'
+                }`}
+            >
+                {getVideo(auto)}
+            </div>
+        );
+    } else {
+        return (
+            <div
+                className={`${
+                    isClicked ? 'video-container clicked' : 'video-container'
+                }`}
+            >
+                {getVideo(auto)}
+            </div>
+        );
+    }
 }

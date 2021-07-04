@@ -6,7 +6,7 @@ export default function KuenstlerResidenz() {
     return (
         <div className='details-content'>
             <div className='details-flex-col'>
-                <Video src={VideoKuenstlerResidenz} auto={true} />
+                <Video src={VideoKuenstlerResidenz} auto={true} black={true} />
                 <h2>Künstler-Residenz</h2>
                 <p>
                     Das Gebäude an der Ecke Kistnerstraße/Körnerstraße fällt

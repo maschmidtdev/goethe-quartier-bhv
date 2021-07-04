@@ -6,7 +6,7 @@ export default function EinHof() {
     return (
         <div className='details-content'>
             <div className='details-flex-col'>
-                <Video src={VideoEinHof} auto={true} />
+                <Video src={VideoEinHof} auto={true} black={true} />
                 <h2>Ein Hof für alle</h2>
                 <p>
                     Die für die Gründerzeit typische städtebauliche Form der
