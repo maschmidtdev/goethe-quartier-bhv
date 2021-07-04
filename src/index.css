@@ -157,6 +157,37 @@ nav ul > li > a {
 #home .video-container video {
     width: 100%;
 }
+.home-flex {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-flex p {
+    font-size: larger;
+}
+.home-flex p,
+.home-flex h1 {
+    max-width: 400px;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.home-flex a,
+.home-flex button {
+    font-size: larger;
+    text-decoration: none;
+    background-color: wheat;
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 0.6rem;
+    color: black;
+    max-width: 200px;
+    text-align: center;
+}
 
 /* ===============  VIDEO ===============  */
 .video-container {
@@ -399,7 +430,7 @@ nav ul > li > a {
     /* right: -100%; */
     right: -60vw;
     transition: transform 0.3s ease;
-    z-index: 15;
+    z-index: 25;
     border: 3px solid rgb(221, 243, 96);
     background-color: white;
 }
@@ -430,6 +461,7 @@ nav ul > li > a {
     text-align: center;
 }
 .details-flex-col img {
+    max-width: 100%;
     height: 100%;
     object-fit: fill;
 }
@@ -497,6 +529,10 @@ nav ul > li > a {
 }
 
 /* URBAN GARDENING */
+.text-container {
+    padding-right: 1rem;
+    /* padding-right: 5rem; */
+}
 .text-container h3 {
     margin: 0.5rem;
 }
@@ -537,6 +573,9 @@ img.urbanGarden-1 {
     align-items: center;
     flex-shrink: 0;
 }
+.details-content > .pagination.urban {
+    justify-content: center;
+}
 .details-content .click {
     display: flex;
     align-items: center;
@@ -545,7 +584,6 @@ img.urbanGarden-1 {
     font-size: large;
     font-weight: bold;
 }
-
 .details-content .click .circle {
     border: 2px solid black;
     border-radius: 50%;
@@ -553,6 +591,33 @@ img.urbanGarden-1 {
     height: 50px;
     justify-content: space-between;
     margin: 0 1rem;
+    position: relative;
+}
+.click .circle .line {
+    background-color: black;
+    position: absolute;
+    height: 3px;
+    width: 55%;
+}
+.click .circle .line.next:nth-child(1) {
+    transform: rotate(45deg);
+    top: 28%;
+    left: 25%;
+}
+.click .circle .line.next:nth-child(2) {
+    transform: rotate(-45deg);
+    bottom: 28%;
+    left: 25%;
+}
+.click .circle .line.prev:nth-child(1) {
+    bottom: 28%;
+    transform: rotate(45deg);
+    right: 25%;
+}
+.click .circle .line.prev:nth-child(2) {
+    top: 28%;
+    transform: rotate(-45deg);
+    right: 25%;
 }
 .details-content .click:hover {
     cursor: pointer;

@@ -38,6 +38,18 @@ export default function UrbanGardening() {
                                 ermöglichen.
                             </p>
                         </div>
+                        <div className='pagination urban'>
+                            <div
+                                className='click '
+                                onClick={() => handleClick(1)}
+                            >
+                                <span>Weiter</span>
+                                <div className='circle'>
+                                    <div className='line next'></div>
+                                    <div className='line next'></div>
+                                </div>
+                            </div>
+                        </div>
                         <img
                             class='urbanGarden-1'
                             src={DetailsUrbanGardening}
@@ -72,6 +84,18 @@ export default function UrbanGardening() {
                                 Photovoltaikanlagen.
                             </p>
                         </div>
+                        <div className='pagination urban'>
+                            <div
+                                className='click'
+                                onClick={() => handleClick(-1)}
+                            >
+                                <div className='circle'>
+                                    <div className='line prev'></div>
+                                    <div className='line prev'></div>
+                                </div>
+                                <span>Zurück</span>
+                            </div>
+                        </div>
                         <div className='urbanGarden-2'>
                             <img src={DetailsUrbanGardening_2} alt='' />
                             <img src={DetailsUrbanGardening_2} alt='' />
@@ -98,7 +122,7 @@ export default function UrbanGardening() {
     return (
         <div className='details-content studentisches-wohnen'>
             {setContent(page)}
-            <div className='pagination'>
+            {/* <div className='pagination'>
                 <div className='click' onClick={() => handleClick(-1)}>
                     {page > 1 && (
                         <>
@@ -115,7 +139,7 @@ export default function UrbanGardening() {
                         </>
                     )}
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

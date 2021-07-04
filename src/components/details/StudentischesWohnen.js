@@ -133,7 +133,10 @@ export default function StudentischesWohnen() {
                 <div className='click' onClick={() => handleClick(-1)}>
                     {page > 1 && (
                         <>
-                            <div className='circle'></div>
+                            <div className='circle'>
+                                <div className='line prev'></div>
+                                <div className='line prev'></div>
+                            </div>
                             <span>Zurück</span>
                         </>
                     )}
@@ -142,7 +145,10 @@ export default function StudentischesWohnen() {
                     {page < 3 && (
                         <>
                             <span>Weiter</span>
-                            <div className='circle'></div>
+                            <div className='circle'>
+                                <div className='line next'></div>
+                                <div className='line next'></div>
+                            </div>
                         </>
                     )}
                 </div>
