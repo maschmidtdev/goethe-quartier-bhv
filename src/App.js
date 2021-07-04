@@ -12,6 +12,7 @@ import Eindruecke from './pages/Eindruecke';
 import Mitgestaltung from './pages/Mitgestaltung';
 import Akteure from './pages/Akteure';
 import Visionen from './pages/Visionen';
+import Impressum from './pages/Impressum';
 import { NavProvider } from './context/nav_context';
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
                 </Route>
                 <Route exact path='/visionen'>
                     <Visionen />
+                </Route>
+                <Route exact path='/impressum'>
+                    <Impressum />
                 </Route>
             </Switch>
             {/* <Footer /> */}

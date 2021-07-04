@@ -11,7 +11,7 @@ export default function Navbar() {
             <ul>
                 <li>
                     <Link to='/' onClick={handleClick}>
-                        Home
+                        Start
                     </Link>
                 </li>
                 <li>
@@ -19,34 +19,39 @@ export default function Navbar() {
                         Karte
                     </Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to='/about' onClick={handleClick}>
                         Über uns
                     </Link>
-                </li>
+                </li> */}
                 <li>
                     <Link to='/analyse' onClick={handleClick}>
                         Analyse
                     </Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to='/eindruecke' onClick={handleClick}>
                         Eindrücke
                     </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                     <Link to='/mitgestaltung' onClick={handleClick}>
                         Mitgestaltung
                     </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                     <Link to='/akteure' onClick={handleClick}>
                         Akteure
                     </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                     <Link to='/visionen' onClick={handleClick}>
                         Visionen
+                    </Link>
+                </li> */}
+                <li>
+                    <Link to='/impressum' onClick={handleClick}>
+                        Impressum
                     </Link>
                 </li>
             </ul>

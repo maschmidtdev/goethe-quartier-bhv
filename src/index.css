@@ -245,6 +245,11 @@ nav ul > li > a {
     transform: translateY(-100vh);
     z-index: -10;
 }
+.map-menu .content {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .map-pulldown {
     width: 100px;
     height: 40px;
@@ -298,6 +303,9 @@ nav ul > li > a {
     padding: 0.2rem;
     padding-left: 1rem;
 }
+.map-menu p {
+    font-size: large;
+}
 
 /* =============== CATEGORY =============== */
 .categories-flex {
@@ -309,7 +317,7 @@ nav ul > li > a {
 .category-container {
     width: 19vw;
     height: auto;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .category-container:hover {
     cursor: pointer;
