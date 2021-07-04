@@ -19,7 +19,7 @@ export default function MapMenu() {
                 Wir haben unsere Ideen für das Goethequartier in vier Kategorien
                 unterteile, um es etwas übersichtlicher zu gestalten. Hinter
                 jeder Kategorie verbergen sich mehrere einzelne Ideen und
-                Projekte, die das Goethewuartier noch lebenswerter machen
+                Projekte, die das Goethequartier noch lebenswerter machen
                 könnten. Klicke dich durch die Kategorien und entdecke, was in
                 uznserer Stadt alles möglich wäre:
             </p>
