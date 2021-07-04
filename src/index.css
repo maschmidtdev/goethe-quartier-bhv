@@ -483,6 +483,9 @@ nav ul > li > a {
     height: 100%;
     object-fit: fill;
 }
+.details-flex-col h3 {
+    padding-bottom: 0.5rem;
+}
 
 .details-content .hochschule h2 {
     padding-top: 0.5rem;

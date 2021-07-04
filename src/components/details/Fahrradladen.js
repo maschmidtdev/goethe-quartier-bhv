@@ -1,12 +1,12 @@
 import React from 'react';
 import Video from '../../components/Video';
-import { VideoKuenstlerResidenz } from '../../assets';
+import { VideoFahrradladen } from '../../assets';
 
 export default function Fahrradladen() {
     return (
         <div className='details-content'>
             <div className='details-flex-col'>
-                {/* <Video src={VideoKuenstlerResidenz} auto={true} /> */}
+                <Video src={VideoFahrradladen} auto={true} />
                 <h2>Revitalisierung durch Gewerbe im Erdgeschoss</h2>
                 <h3> – der Fahrradladen</h3>
                 <p>

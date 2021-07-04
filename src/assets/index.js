@@ -5,6 +5,7 @@ import VideoEinHof from './video/ein-hof.mp4';
 import VideoNachbarschaftOhneAutos from './video/nachbarschaft-ohne-autos.mp4';
 import VideoRaumVsBaum from './video/raum-vs-baum.mp4';
 import VideoUrbanerWaldgarten from './video/urbaner-waldgarten.mp4';
+import VideoFahrradladen from './video/fahrradladen.mp4';
 import MapDefault from './map.png';
 import CategoryAlteWege from './category-alte-wege.png';
 import CategoryGebaude from './category-gebaeude.png';
@@ -46,6 +47,7 @@ export {
     VideoNachbarschaftOhneAutos,
     VideoRaumVsBaum,
     VideoUrbanerWaldgarten,
+    VideoFahrradladen,
     CategoryAlteWege,
     CategoryGebaude,
     CategoryStadtGruen,

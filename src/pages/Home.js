@@ -14,7 +14,7 @@ export default function Home() {
                         className={`${isShow ? 'home-flex show' : 'home-flex'}`}
                     >
                         <p>
-                            Was passiert, wenn sich zwei MasterstudentInnern der
+                            Was passiert, wenn sich zwei MasterstudentInnen der
                             Architektur mit dem
                         </p>
                         <h1>G O T H E Q U A R T I E R</h1>
