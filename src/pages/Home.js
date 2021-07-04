@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <div id='home'>
             {/* <h1>Home</h1> */}
-            <Video src={Videosource} />
+            <Video src={Videosource} auto={false} />
         </div>
     );
 }

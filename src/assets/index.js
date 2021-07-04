@@ -1,11 +1,3 @@
-// import PictoGebaeude from './picto-gebaeude.png';
-// import PictoStadtGruen from './picto-stadt-gruen.png';
-// import PictoTraffic from './picto-traffic.png';
-// import PictoWirtschaft from './picto-wirtschaft.png';
-// import MapGebaeude from './map-gebaeude.png';
-// import MapStadtGruen from './map-stadt-gruen.png';
-// import MapTraffic from './map-traffic.png';
-// import MapWirtschaft from './map-wirtschaft.png';
 import Videosource from './video/start.mp4';
 import VideoKuenstlerResidenz from './video/kuenstlerresidenz.mp4';
 import VideoEinHof from './video/ein-hof.mp4';
@@ -19,6 +11,7 @@ import CategoryWirtschaft from './category-wirtschaft.png';
 import OverlayAlteWege from './overlays/overlay-alte-wege.png';
 import OverlayGebaeude from './overlays/overlay-gebaeude.png';
 import OverlayStadtGruen from './overlays/overlay-stadt-gruen.png';
+import OverlayStadtGruenMap from './overlays/overlay-stadt-gruen-map.png';
 import OverlayWirtschaft from './overlays/overlay-wirtschaft.png';
 import DetailsUrbanGardening from './details-urban-gardening.png';
 import OverlayStudentischesWohnen from './overlays/overlay-studentisches-wohnen.png';
@@ -36,16 +29,9 @@ import StudentischesWohnen_1 from './studentisches-wohnen-1-4.png';
 import StudentischesWohnen_2 from './studentisches-wohnen-2-4.png';
 import StudentischesWohnen_3 from './studentisches-wohnen-3-4.png';
 import StudentischesWohnen_4 from './studentisches-wohnen-4-4.png';
+import ImgMehrGrueneDaecher from './mehr-gruene-daecher.jpg';
 
 export {
-    // PictoGebaeude,
-    // PictoStadtGruen,
-    // PictoTraffic,
-    // PictoWirtschaft,
-    // MapGebaeude,
-    // MapStadtGruen,
-    // MapTraffic,
-    // MapWirtschaft,
     MapDefault,
     Videosource,
     VideoKuenstlerResidenz,
@@ -59,6 +45,7 @@ export {
     OverlayAlteWege,
     OverlayGebaeude,
     OverlayStadtGruen,
+    OverlayStadtGruenMap,
     OverlayWirtschaft,
     DetailsUrbanGardening,
     OverlayStudentischesWohnen,
@@ -76,4 +63,5 @@ export {
     StudentischesWohnen_2,
     StudentischesWohnen_3,
     StudentischesWohnen_4,
+    ImgMehrGrueneDaecher,
 };

@@ -6,6 +6,7 @@ import {
     EinHof,
     Nachbarschaft,
     RaumVsBaum,
+    MehrGrueneDaecher,
     UrbanGardening,
 } from './details';
 
@@ -14,7 +15,6 @@ export default function Details() {
     const [isOpen, setIsOpen] = useState(mapState.isDetailsOpen);
 
     useEffect(() => {
-        console.log('USEEFFECT');
         setIsOpen(mapState.details !== null);
     }, [mapState.details]);
 
@@ -32,6 +32,8 @@ export default function Details() {
                 return <Nachbarschaft />;
             case 4:
                 return <RaumVsBaum />;
+            case 5:
+                return <MehrGrueneDaecher />;
             case 7:
                 return <UrbanGardening />;
 

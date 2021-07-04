@@ -6,7 +6,7 @@ export default function RaumVsBaum() {
     return (
         <div className='details-content'>
             <div className='details-flex-col'>
-                <Video src={VideoRaumVsBaum} />
+                <Video src={VideoRaumVsBaum} auto={true} />
                 <h2>Ein neues Straßenbild durch Ausbau der Alleen</h2>
                 <p>
                     Es gibt sehr attraktive Straßen und – leider auch – weniger

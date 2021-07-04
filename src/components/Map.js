@@ -5,12 +5,7 @@ import MapMenu from '../components/MapMenu';
 import MapPulldown from '../components/MapPulldown';
 import Info from '../components/Info';
 import Details from '../components/Details';
-// import {
-//     PictoGebaeude,
-//     PictoStadtGruen,
-//     PictoWirtschaft,
-//     PictoTraffic,
-// } from '../assets';
+import { OverlayStadtGruenMap } from '../assets';
 
 export default function Map() {
     const { mapState, setDetails } = useMapContext();
@@ -49,6 +44,9 @@ export default function Map() {
             <Info categoryId={3} infoId={10} />
             <Details />
             <MapPulldown />
+            {mapState.details === 5 && (
+                <img src={OverlayStadtGruenMap} alt='' onClick={mapClick} />
+            )}
         </div>
     );
 }

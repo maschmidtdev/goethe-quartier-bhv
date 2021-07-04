@@ -21,12 +21,6 @@ import {
 const MapContext = React.createContext();
 
 const initialMapState = {
-    pictoStates: [
-        { isActive: false },
-        { isActive: false },
-        { isActive: false },
-        { isActive: false },
-    ],
     categoryStates: [
         { isActive: false },
         { isActive: false },
@@ -65,26 +59,7 @@ const detailsOverlays = [
 export const MapProvider = ({ children }) => {
     const [mapState, setMapState] = useState(initialMapState);
 
-    // const handleClick = (id) => {
-    //     const newStates = mapState.pictoStates.map((state, pictoId) => {
-    //         return pictoId === id ? { isActive: true } : { isActive: false };
-    //     });
-    //     setMapState({
-    //         ...mapState,
-    //         mapOverlay: categoryOverlays[id],
-    //         pictoStates: newStates,
-    //     });
-    // };
-
-    // const setModal = (state, text) => {
-    //     setMapState({
-    //         ...mapState,
-    //         isModalOpen: state,
-    //         modalText: text,
-    //     });
-    // };
     const setCategory = (id) => {
-        // console.log('setCategory id', id);
         setMapState({
             ...mapState,
             category: id,

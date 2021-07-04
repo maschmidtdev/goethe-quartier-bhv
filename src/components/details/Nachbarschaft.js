@@ -6,7 +6,7 @@ export default function Nachbarschaft() {
     return (
         <div className='details-content'>
             <div className='details-flex-col'>
-                <Video src={VideoNachbarschaftOhneAutos} />
+                <Video src={VideoNachbarschaftOhneAutos} auto={true} />
                 <h2>Autofreie Zonen</h2>
                 <p>
                     <strong>

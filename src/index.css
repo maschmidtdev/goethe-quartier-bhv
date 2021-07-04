@@ -420,6 +420,26 @@ nav ul > li > a {
     text-align: justify;
     line-height: 1.4rem;
 }
+.details-content .container p {
+    padding: 0 1rem;
+}
+.details-flex-col {
+    display: flex;
+    height: 98%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.details-flex-col img {
+    height: 100%;
+    object-fit: fill;
+}
+.details-flex-col p {
+    font-size: medium;
+    padding: 0 2rem;
+    flex: 0 1 auto;
+}
 
 .details-content .video-container {
     /* background-color: red; */
@@ -476,22 +496,6 @@ nav ul > li > a {
     right: -10px;
     height: 50%;
     max-width: 50%;
-}
-.details-content .container p {
-    padding: 0 1rem;
-}
-.details-flex-col {
-    display: flex;
-    height: 98%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-.details-flex-col p {
-    font-size: medium;
-    padding: 0 2rem;
-    flex: 0 1 auto;
 }
 
 /* EIN HOF FÜR ALLE */
