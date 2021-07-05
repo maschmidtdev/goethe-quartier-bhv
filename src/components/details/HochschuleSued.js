@@ -4,7 +4,7 @@ import { ImgHochschuleSued } from '../../assets';
 export default function HochSchuleSued() {
     return (
         <div className='details-content'>
-            <div className='hochschule'>
+            <div className='hochschule hochschule-sued'>
                 <h2>Hochschulstandort Süd</h2>
                 <div className='text'>
                     <img src={ImgHochschuleSued} alt='' />

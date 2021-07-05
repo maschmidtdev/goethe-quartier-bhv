@@ -498,15 +498,9 @@ nav ul > li > a {
 .details-content .hochschule h2 {
     padding-top: 0.5rem;
 }
-.details-content .hochschule-nord {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
 
 .hochschule img {
-    max-width: 40%;
+    max-width: 50%;
     object-fit: fill;
     float: left;
     padding: 0.5rem 1rem;
@@ -514,7 +508,36 @@ nav ul > li > a {
 .hochschule p {
     padding: 1rem;
     padding-top: 0;
+    font-size: large;
+    line-height: 1.5rem;
 }
+.details-content .hochschule-nord {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+@media screen and (max-width: 1600px) {
+    .details-content .hochschule-sued p {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .details-content .hochschule-nord p {
+        font-size: medium;
+    }
+    .details-content .hochschule-sued p {
+        line-height: 1rem;
+        font-size: x-small;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .details-content .hochschule-nord p {
+        font-size: small;
+    }
+}
+
 .details-flex-col p {
     font-size: medium;
     padding: 0 2rem;
