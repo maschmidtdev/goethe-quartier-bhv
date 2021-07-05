@@ -169,7 +169,7 @@ export default function Analyse() {
             <article>
                 <img src={AnalyseSwot} alt='' />
                 <p>
-                    Stärken – Schwächen – Potentiale – Risiken In diesen
+                    Stärken – Schwächen – Potentiale – Risiken. In diesen
                     Kategorien lässt sich strukturieren und ordnen, was die
                     Entwicklung des Quartiers ausmacht und ausmachen könnte.
                     Dabei entscheidet die Quantität nie über die Qualität von

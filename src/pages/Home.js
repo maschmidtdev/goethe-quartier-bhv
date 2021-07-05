@@ -3,16 +3,14 @@ import { Videosource } from '../assets/index';
 import Video from '../components/Video';
 
 export default function Home() {
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(1);
     const [isShow, setIsShow] = useState(false);
 
-    const getContent = (page) => {
+    const getContent = (page, show) => {
         switch (page) {
             case 1:
                 return (
-                    <div
-                        className={`${isShow ? 'home-flex show' : 'home-flex'}`}
-                    >
+                    <div className={`${show ? 'home-flex show' : 'home-flex'}`}>
                         <p>
                             Was passiert, wenn sich zwei MasterstudentInnen der
                             Architektur mit dem
@@ -21,14 +19,14 @@ export default function Home() {
                         <p>
                             in <em>Bremerhaven-Lehe</em> auseinandersetzen?...
                         </p>
-                        <button onClick={(e) => setPage(2)}>klicke hier</button>
+                        <button onClick={(e) => changePage(2)}>
+                            klicke hier
+                        </button>
                     </div>
                 );
             case 2:
                 return (
-                    <div
-                        className={`${isShow ? 'home-flex show' : 'home-flex'}`}
-                    >
+                    <div className={`${show ? 'home-flex show' : 'home-flex'}`}>
                         <p>
                             Wir wollen Lust machen auf einen{' '}
                             <strong>Lebensraum</strong> mit
@@ -39,7 +37,7 @@ export default function Home() {
                         <button
                             onClick={(e) => {
                                 console.log(e.target);
-                                setPage(3);
+                                changePage(3);
                             }}
                         >
                             okay dann zeig her!
@@ -48,9 +46,7 @@ export default function Home() {
                 );
             case 3:
                 return (
-                    <div
-                        className={`${isShow ? 'home-flex show' : 'home-flex'}`}
-                    >
+                    <div className={`${show ? 'home-flex show' : 'home-flex'}`}>
                         <p>
                             Wir zeigen dir Projekte und Ideen, die das Quartier
                             in ihrer{' '}
@@ -68,6 +64,7 @@ export default function Home() {
     };
 
     const changePage = (page) => {
+        console.log('[changePage]', page);
         setIsShow(false);
         setPage(page);
         setTimeout(() => {
@@ -77,12 +74,10 @@ export default function Home() {
 
     return (
         <div id='home'>
-            {/* <h1>Home</h1> */}
-            <div className='home-video'>
+            {/* <div className='home-video'>
                 <Video src={Videosource} auto={false} changePage={changePage} />
-            </div>
-            {/* {getContent(1)} */}
-            {page > 0 && getContent(page)}
+            </div> */}
+            {page > 0 && getContent(page, isShow)}
         </div>
     );
 }
