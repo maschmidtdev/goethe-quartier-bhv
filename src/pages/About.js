@@ -30,7 +30,7 @@ export default function About() {
                             Freihandzeichnen soll mir angeblich nicht so liegen.
                         </p>
                         <p>
-                            <strong>Entwurfsplanung oder Bauleitung?:</strong>
+                            <strong>Entwurfsplanung oder Bauleitung?:</strong>{' '}
                             Bauleitung! Mit Klemmbrett und Helm :-)
                         </p>
                         <p>
@@ -45,23 +45,20 @@ export default function About() {
                             Kreis zu meinen Wurzeln wieder schließt.
                         </p>
                         <p>
-                            <strong>Lieblingsplatz im Goethequartier:</strong>
-                            die Goethestraße mit den vielen Bäumen und Vorgärten
+                            <strong>Lieblingsplatz im Goethequartier:</strong>{' '}
+                            Die Goethestraße mit den vielen Bäumen und Vorgärten
                             auf jeden Fall.
                         </p>
                         <p>
                             <strong>
                                 Persönliches Lieblingsprojekt dieser Arbeit:
-                            </strong>
-                            Autofreie Zone! Das Leben ist viel schöner mit
-                            weniger Autos.
+                            </strong>{' '}
+                            Urbaner Waldgarten! Ich bin und bleibe Utopist :-)
                         </p>
                         <p>
-                            <strong>In 10 Jahren:</strong> Ich hoffe, meine
-                            geplanten Projekte realisieren zu können und freue
-                            mich auf Fortschritte in meiner Stelle beim
-                            Schulverwaltungsamt Düsseldorf. Ich möchte spannende
-                            Projekte von Anfang bis Ende begleiten...
+                            <strong>In 10 Jahren:</strong> Hoffentlich endlich
+                            in der Architektenkammer. Selbständig und gut
+                            vernetzt...
                         </p>
                     </article>
                     <article>
