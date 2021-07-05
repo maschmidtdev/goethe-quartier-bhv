@@ -16,7 +16,7 @@ export default function Navbar() {
                 </li>
                 <li>
                     <Link to='/map' onClick={handleClick}>
-                        Karte
+                        Visionen
                     </Link>
                 </li>
                 <li>
@@ -30,23 +30,8 @@ export default function Navbar() {
                     </Link>
                 </li>
                 {/* <li>
-                    <Link to='/eindruecke' onClick={handleClick}>
-                        Eindrücke
-                    </Link>
-                </li> */}
-                {/* <li>
                     <Link to='/mitgestaltung' onClick={handleClick}>
                         Mitgestaltung
-                    </Link>
-                </li> */}
-                {/* <li>
-                    <Link to='/akteure' onClick={handleClick}>
-                        Akteure
-                    </Link>
-                </li> */}
-                {/* <li>
-                    <Link to='/visionen' onClick={handleClick}>
-                        Visionen
                     </Link>
                 </li> */}
                 <li>
