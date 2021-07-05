@@ -679,17 +679,54 @@ img.urbanGarden-1 {
     cursor: pointer;
 }
 
-/* =============== MEDIA QUERIES =================== */
-/* 
-@media screen and (max-height: 720px) {
-    .picto-container {
-        font-size: small;
-    }
-    .picto-container h4 {
-        bottom: -1vh;
-    }
+/* ================= ANALYSE =================== */
+section.analyse {
+    width: 70vw;
+    margin: 0 auto;
+}
+section.analyse p {
+    padding: 0.25rem;
+    text-align: justify;
+}
+section.analyse .einleitung h1 {
+    font-size: 50px;
+    color: mediumpurple;
+    padding: 1rem 0;
+}
+section.analyse .einleitung p {
+    padding: 2rem 0;
+}
+section.analyse article {
+    width: 100%;
+    margin: 1rem auto;
+    position: relative;
+}
+section.analyse article img {
+    width: 100%;
+}
+section.analyse article.verortung p {
+    position: absolute;
+    top: 11%;
+    right: 0;
+    width: 65%;
 }
 
+/* =============== MEDIA QUERIES =================== */
+
+@media screen and (max-width: 1400px) {
+    section.analyse article p {
+        font-size: small;
+    }
+}
+@media screen and (max-width: 1160px) {
+    section.analyse {
+        width: 85vw;
+    }
+    section.analyse article.verortung p {
+        font-size: x-small;
+    }
+}
+/*
 @media screen and (max-width: 1400px) {
     .picto-container {
         left: 5%;

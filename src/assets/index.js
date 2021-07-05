@@ -38,6 +38,11 @@ import StudentischesWohnen_4 from './studentisches-wohnen-4-4.png';
 import ImgMehrGrueneDaecher from './mehr-gruene-daecher.jpg';
 import ImgHochschuleNord from './hochschule-nord.jpg';
 import ImgHochschuleSued from './hochschule-sued.jpg';
+import AnalyseVerortung from './analyse/verortung.jpeg';
+import AnalyseZahlenFakten from './analyse/fakten-und-zahlen.jpeg';
+import AnalyseVerortungStadt from './analyse/verortung-in-stadt.jpeg';
+import AnalyseWasWoIst from './analyse/was-wo-ist.jpeg';
+import AnalyseBestandsfotos from './analyse/bestandsfotos.jpeg';
 
 export {
     MapDefault,
@@ -79,4 +84,9 @@ export {
     OverlayHochschuleSued,
     ImgHochschuleNord,
     ImgHochschuleSued,
+    AnalyseVerortung,
+    AnalyseZahlenFakten,
+    AnalyseVerortungStadt,
+    AnalyseWasWoIst,
+    AnalyseBestandsfotos,
 };

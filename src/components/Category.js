@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useMapContext } from '../context/map_context';
 import {
     CategoryAlteWege,
