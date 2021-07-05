@@ -185,12 +185,13 @@ nav ul > li > a {
 }
 
 .home-flex h1 {
+    font-size: 55px;
     margin: 3rem 0;
 }
 .home-flex p {
-    font-size: x-large;
+    font-size: 30px;
     text-align: center;
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 
 .home-flex a,
