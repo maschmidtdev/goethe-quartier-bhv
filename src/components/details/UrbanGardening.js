@@ -78,10 +78,10 @@ export default function UrbanGardening() {
                                 Norden des Grundstückes vor, das den Blockrand
                                 weiter schließt und in kompakter Weise die Auto
                                 stapelt. Hier können dann auch Besucher-PKW oder
-                                die Fahrzeuge der Anwohner aus den autofreien
-                                Zonen in direkter Nähe parken. Die Fassade wird
-                                begrünt und auch das Flachdach birgt weitere
-                                Flächen für Pflanz-Kästen und/oder
+                                die Fahrzeuge der AnwohnerInnen aus den
+                                autofreien Zonen in direkter Nähe parken. Die
+                                Fassade wird begrünt und auch das Flachdach
+                                birgt weitere Flächen für Pflanzkästen und/oder
                                 Photovoltaikanlagen.
                             </p>
                         </div>

@@ -21,7 +21,7 @@ const texts = [
     Doch versuchen wir einmal, das Quartier mit neuen Augen zu sehen...`,
     `Die "Lunge" einer Stadt, so werden urbane Grünräume gerne genannt.
     Wie unterschiedlich das in unserem Quartier aussehen könnte, dafür zeigen wir euch ein paar Ideen...`,
-    `Der "Motor" eienr Nation, so wird die Wirtschaft immer wieder betitelt.
+    `Der "Motor" einer Nation, so wird die Wirtschaft immer wieder betitelt.
     Dieser Motor soll auch in Lehe wieder zum Laufen gebracht werden...`,
 ];
 const images = [

@@ -95,11 +95,9 @@ export default function StudentischesWohnen() {
                                 Wohngemeinschaften für Studierende umgebaut
                                 werden sollen. Das klassische Pendant hierzu
                                 wird in dem kleineren Abschnitt in der Eupener
-                                Straße anegboten, wo geschossübergreifend 2- bis
+                                Straße angeboten, wo geschossübergreifend 2- bis
                                 3-Zimmer-Wohnungen angeboten werden - möglichst
-                                auch für Studierende vorbehalten. (Hinweis: Die
-                                Erschließung über den Hof ist noch nicht
-                                brandschutztechnisch überprüft)
+                                auch für Studierende vorbehalten.
                             </p>
                             <br />
                             <p>

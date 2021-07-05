@@ -106,7 +106,7 @@ export default function About() {
                         <p>
                             <strong>
                                 Persönliches Lieblingsprojekt dieser Arbeit:
-                            </strong>
+                            </strong>{' '}
                             Autofreie Zone! Das Leben ist viel schöner mit
                             weniger Autos.
                         </p>

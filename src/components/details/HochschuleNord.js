@@ -18,7 +18,7 @@ export default function HochSchulNord() {
                         einbringen und damit massiv in die Gestaltung und
                         Aktivität eines Lebensraumes eingreifen. Meistens wirken
                         sie dort auch als Bindeglied und Kommunikationsbrücke
-                        zwischen hochrangigen Entscheidungsträgern und den
+                        zwischen hochrangigen EntscheidungsträgerInnen und den
                         augenscheinlich unbeteiligten Bürgern. Dabei treten sie
                         oft in Kollektiven auf und bringen indirekt neue Ideen
                         und Bürgerbeteiligung mit auf den Weg. Wichtige
@@ -34,7 +34,7 @@ export default function HochSchulNord() {
                         Ausbildung verlassen und wichtiges Potential wegtragen.
                         Der Standort ist eine recht großformatige Baulücke in
                         der Lutherstraße mit praktischer Nähe zur
-                        Atsrid-Lindgren-Schule und birgt unserer Auffassung nach
+                        Astrid-Lindgren-Schule und birgt unserer Auffassung nach
                         derzeit hohen Handlungsbedarf in Bezug auf die
                         Ausrichtung der Nachbarschaft hin zu mehr
                         Lebensqualität.

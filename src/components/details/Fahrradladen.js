@@ -20,9 +20,9 @@ export default function Fahrradladen() {
                     weitesten Sinne versehen und brachte so einen fast natürlich
                     Mix aus Wohnen und Arbeiten ins Quartier. Laufkundschaft
                     belebt das Treiben in den Straßen und fördert lebensnahes
-                    Arbeiten. Die Bewohner in den oberen Etagen profitieren von
-                    den nahen Arbeitsplätzen, der Versorgung „vor der Tür“ und
-                    der attraktiven Lage direkt in der Stadt. Politische
+                    Arbeiten. Die BewohnerInnen in den oberen Etagen profitieren
+                    von den nahen Arbeitsplätzen, der Versorgung „vor der Tür“
+                    und der attraktiven Lage direkt in der Stadt. Politische
                     Entscheidungen, der Fokus auf eine Innenstadtentwicklung in
                     „Mitte“ und der bekannte Weggang des kleinteiligen
                     Einzelhandels führten zu einer monostrukturellen Nutzung im
@@ -35,8 +35,8 @@ export default function Fahrradladen() {
                     kann und somit ein Mehrwert für das Quartier entstehen
                     könnte. In diesem Beispiel könnte ein Fahrradgeschäft dort
                     Platz finden – natürlich passend zu unserem
-                    Mobilitätskonzept, das sich mehr auf Fußgänger und Radler
-                    konzentriert als auf individuellen PKW-Verkehr.
+                    Mobilitätskonzept, das sich mehr auf FußgängerInnen und
+                    RadlerInnen konzentriert als auf individuellen PKW-Verkehr.
                 </p>
             </div>
         </div>

@@ -80,8 +80,8 @@ export default function Analyse() {
                     Gründerzeit ist nicht gleich Gründerzeit! Die Fotos aus dem
                     Quartier zeigen es: Mal aufwändige Stuckfassaden, mal etwas
                     schmucklosere Gebäudehüllen. Mal 5-geschossige
-                    Mehrparteienhäuser, mal die alleinstehende Stadtvilla. Ist
-                    erkennbar, wo sich der Neubau zwischengeschummelt hat.
+                    Mehrparteienhäuser, mal die alleinstehende Stadtvilla.
+                    Dazwischen sind Neubauten erkennabr.
                 </p>
             </article>
             <hr />

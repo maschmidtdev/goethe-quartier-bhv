@@ -33,7 +33,7 @@ export default function Nachbarschaft() {
                     Hier schließen sich Gemeinschaftssinn und individuelle
                     Gestaltung keineswegs aus. Jedoch hängt dieses Konzept stark
                     von der Akzeptanz und auch von der Mitgestaltung der
-                    Anwohner ab, wobei die eigene Identifikation mit dem
+                    AnwohnerInnen ab, wobei die eigene Identifikation mit dem
                     Quartier eine wichtige Rolle spielt. Hinweis: Ein Ausgleich
                     für Autoparker ist angedacht in Form eines Parkhauses an der
                     Ecke Körnerstr./Eupener Str., siehe Konzept „Urban Gardeing“

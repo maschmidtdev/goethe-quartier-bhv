@@ -27,7 +27,7 @@ export default function KuenstlerResidenz() {
                     gedacht und adaptiert werden. Die Grundidee ist,
                     KünstlerInnen von überall in die Stadt zu holen und ihnen
                     hier einen attraktiven, temporären Wirkungsort zu bieten.
-                    Das ist lukrativ für Künstler und ein vielfältiger,
+                    Das ist lukrativ für KünstlerInnen und ein vielfältiger,
                     kreativer Zugewinn für die Stadt und die künstlerische
                     Vernetzung. Die Künstler können im ersten Obergeschoss in
                     Ateliers kreativ arbeiten und in Wohnungen darüber finden
