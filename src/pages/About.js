@@ -10,9 +10,9 @@ export default function About() {
                 <div className='about-flex'>
                     <article>
                         <img src={PhotoMaurice} alt='' />
-                        <p>
+                        <h2>
                             <strong>Maurice Schmidt</strong>
-                        </p>
+                        </h2>
                         <p>
                             <strong>Geboren:</strong> 06.07.1993 in Bremen
                         </p>
@@ -66,9 +66,9 @@ export default function About() {
                     </article>
                     <article>
                         <img src={PhotoAfrooz} alt='' />
-                        <p>
+                        <h2>
                             <strong>Afrooz Khodakaram Nezhad</strong>
-                        </p>
+                        </h2>
                         <p>
                             <strong>Geboren:</strong> 02.09.1994 in Isfahan,
                             Iran
