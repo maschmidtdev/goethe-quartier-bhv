@@ -43,6 +43,16 @@ import AnalyseZahlenFakten from './analyse/fakten-und-zahlen.jpeg';
 import AnalyseVerortungStadt from './analyse/verortung-in-stadt.jpeg';
 import AnalyseWasWoIst from './analyse/was-wo-ist.jpeg';
 import AnalyseBestandsfotos from './analyse/bestandsfotos.jpeg';
+import AnalyseHandlungsbedarfe_1 from './analyse/handlungsbedarfe-1.jpeg';
+import AnalyseHandlungsbedarfe_2 from './analyse/handlungsbedarfe-2.jpeg';
+import AnalyseHandlungsbedarfe_3 from './analyse/handlungsbedarfe-3.jpeg';
+import AnalyseHandlungsbedarfe_4 from './analyse/handlungsbedarfe-4.jpeg';
+import AnalyseSwot from './analyse/swot-analyse.jpeg';
+import AnalyseThemenfelder_1 from './analyse/themenfelder-1.jpeg';
+import AnalyseThemenfelder_2 from './analyse/themenfelder-2.jpeg';
+import AnalyseFlaechennutzung from './analyse/flaechennutzungsplan.jpeg';
+import AnalyseLuftbild from './analyse/luftbild.jpeg';
+import AnalyseLuftbildCollage from './analyse/luftbild-collage.jpeg';
 
 export {
     MapDefault,
@@ -89,4 +99,14 @@ export {
     AnalyseVerortungStadt,
     AnalyseWasWoIst,
     AnalyseBestandsfotos,
+    AnalyseHandlungsbedarfe_1,
+    AnalyseHandlungsbedarfe_2,
+    AnalyseHandlungsbedarfe_3,
+    AnalyseHandlungsbedarfe_4,
+    AnalyseSwot,
+    AnalyseThemenfelder_1,
+    AnalyseThemenfelder_2,
+    AnalyseFlaechennutzung,
+    AnalyseLuftbild,
+    AnalyseLuftbildCollage,
 };

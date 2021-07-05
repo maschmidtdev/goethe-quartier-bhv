@@ -489,7 +489,7 @@ nav ul > li > a {
 .details-flex-col img {
     max-width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: contain;
 }
 .details-flex-col h3 {
     padding-bottom: 0.5rem;
@@ -718,12 +718,17 @@ section.analyse article.verortung p {
         font-size: small;
     }
 }
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1500px) {
+    section.analyse article.verortung p {
+        font-size: small;
+    }
+}
+@media screen and (max-width: 1220px) {
     section.analyse {
         width: 85vw;
     }
     section.analyse article.verortung p {
-        font-size: x-small;
+        font-size: smaller;
     }
 }
 /*

@@ -5,6 +5,16 @@ import {
     AnalyseVerortungStadt,
     AnalyseWasWoIst,
     AnalyseBestandsfotos,
+    AnalyseHandlungsbedarfe_1,
+    AnalyseHandlungsbedarfe_2,
+    AnalyseHandlungsbedarfe_3,
+    AnalyseHandlungsbedarfe_4,
+    AnalyseSwot,
+    AnalyseThemenfelder_1,
+    AnalyseThemenfelder_2,
+    AnalyseFlaechennutzung,
+    AnalyseLuftbild,
+    AnalyseLuftbildCollage,
 } from '../assets';
 
 export default function Analyse() {
@@ -84,11 +94,32 @@ export default function Analyse() {
                 </article>
                 <hr />
                 {/* LUFTBILD & LUFTBILD COLLAGE */}
-                <article>{/* <img src={AnalyseVerortung} alt='' /> */}</article>
+                <article>
+                    <img src={AnalyseLuftbild} alt='' />
+                    <img src={AnalyseLuftbildCollage} alt='' />
+                    <p>
+                        Ein Blick von oben auf das Quartier leistet ebenso
+                        wichtige Informationen. Ziemlich früh wurde uns so klar,
+                        dass die meisten Grünflächen auf kurzgehaltene
+                        Rasenflächen beschränkt sind. Zudem sind die etlichen
+                        schwarzen, flachen Dachflächen für uns geradezu ein
+                        Alarmsignal gewesen.
+                    </p>
+                </article>
                 {/* FLÄCHENNUTZUNGSPLAN */}
                 <article>
-                    {/* <img src={AnalyseVerortung} alt='' /> */}
-                    <p>Zahlen und Fakten</p>
+                    <img src={AnalyseFlaechennutzung} alt='' />
+                    <p>
+                        Im <strong>Flächennutzungsplan</strong> wird festgelegt,
+                        welche Nutzungen in bestimmten Arealen zulässig sein
+                        sollen. Auffällig ist, dass das Goethequartier fast
+                        ausschließlich von Wohnbebauung geprägt ist. Lediglich
+                        der Rand an der Hafenstraße sowie ein großer Streifen an
+                        der Rickmersstraße beherbergen vielfältige
+                        Einzelhandelsgeschäfte. Wir dürfen an dieser Stelle der
+                        Analyse schon einmal vorwegnehmen, dass genau hier eine
+                        der Schwächen des Quartiers sichtbar wird...
+                    </p>
                 </article>
                 <hr />
                 {/* WAS WO IST */}
@@ -115,7 +146,69 @@ export default function Analyse() {
                         schwach bis fehlend zu bewerten. Eine Anpassung des
                         Flächennutzungsplanes haben wir inhaltlich nicht weiter
                         ausgearbeitet, muss aber im Hintergrund mit bedacht
-                        werdenWas wo ist
+                        werden.
+                    </p>
+                </article>
+                <hr />
+                {/* HANDLUNGSBEDARFE */}
+                <article>
+                    <img src={AnalyseHandlungsbedarfe_1} alt='' />
+                    <img src={AnalyseHandlungsbedarfe_2} alt='' />
+                    <img src={AnalyseHandlungsbedarfe_3} alt='' />
+                    <img src={AnalyseHandlungsbedarfe_4} alt='' />
+                    <p>
+                        Der Verfall der historischen Gründerzeitbebauung ist
+                        schon seit vielen Jahren Thema, weswegen man sich vor
+                        ein paar Jahren mit dem Stadtplanungsamt auf eine
+                        sogenannte Handlungsbedarfskarte geeinigt hat, die der
+                        Dringlichkeit nach Gebäude und ihre Handlungsbedarfe
+                        kategorisiert. Das Vorkaufsortsgesetz erweiterte die
+                        rechtliche Handhabe, um verfallende „Schrottimmobilien“
+                        zu retten und in die richtigen Hände zu geben. Uns ist
+                        in unserer Analysephase Anfang 2021 aufgefallen, dass
+                        glücklicherweise bereits ein großer Teil dieser Gebäude
+                        gerettet und saniert worden ist. Offensichtlich hat man
+                        den Wert und das Potential der Bauten erkannt, darauf
+                        kann man aufbauen!
+                    </p>
+                </article>
+                <hr />
+                {/* SWOT ANALYSE */}
+                <article>
+                    <img src={AnalyseSwot} alt='' />
+                    <p>
+                        Stärken – Schwächen – Potentiale – Risiken In diesen
+                        Kategorien lässt sich strukturieren und ordnen, was die
+                        Entwicklung des Quartiers ausmacht und ausmachen könnte.
+                        Dabei entscheidet die Quantität nie über die Qualität
+                        von Faktoren. Die Menge an Potentialen gibt bereits
+                        einen Hinweis darauf, was alles möglich wäre...
+                    </p>
+                </article>
+                <hr />
+                {/* THEMENFELDER */}
+                <article>
+                    <img src={AnalyseThemenfelder_1} alt='' />
+                    <img src={AnalyseThemenfelder_2} alt='' />
+                    <p>
+                        Stadt- bzw. Quartiersentwicklung ist dermaßen
+                        vielfältig, komplex und individuell, dass wir erst
+                        einmal Ordnung in die Menge der möglichen Themen für das
+                        Goethequartier gebracht haben. Zunächst gab es eine
+                        Sammlung von prinzipiell möglichen Themenfeldern für
+                        eine Quartiersentwicklung. Durch verschiedene
+                        Analyse-Verfahren wie Bewohner-Befragungen, eine
+                        Bestandsaufnahme vor Ort oder Interviews mit Akteuren
+                        aus dem Quartier filterten wir die relevanten Themen für
+                        unsere Schwerpunktsetzung. Durch Recherche und
+                        anschließendes Brainstorming gewannen wir eine Übersicht
+                        von Themen und konkreten Ideen, die das Quartier in der
+                        Entwicklung stärken könnten. Nicht alle Ideen konnten im
+                        zeitlich beschränkten Rahmen der Masterthesis umgesetzt
+                        bzw. visualisiert werden. Wir sehen diese Übersicht auch
+                        als eine Anregung für das Weitermachen. Für Menschen,
+                        die sich ebenfalls für das Quartier begeistern. Ebenso
+                        kann diese Liste immer weiter fortgeschrieben werden
                     </p>
                 </article>
                 <hr />
