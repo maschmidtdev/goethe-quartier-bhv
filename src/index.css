@@ -174,7 +174,7 @@ nav ul > li > a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 500px;
+    max-width: 700px;
     height: 100vh;
     z-index: 2;
     opacity: 1;
@@ -184,14 +184,13 @@ nav ul > li > a {
     opacity: 1;
 }
 
+.home-flex h1 {
+    margin: 3rem 0;
+}
 .home-flex p {
     font-size: x-large;
-}
-.home-flex p,
-.home-flex h1 {
-    max-width: 430px;
     text-align: center;
-    line-height: 3rem;
+    line-height: 2rem;
 }
 
 .home-flex a,
@@ -204,7 +203,7 @@ nav ul > li > a {
     color: black;
     max-width: 200px;
     text-align: center;
-    margin: 2rem 0;
+    margin: 3rem 0;
     cursor: pointer;
 }
 
