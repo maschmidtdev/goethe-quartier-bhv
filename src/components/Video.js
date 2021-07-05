@@ -26,7 +26,7 @@ export default function Video({ src, auto, changePage, black }) {
 
         return (
             <>
-                <h2>Klicken zum Abspielen</h2>
+                <h2>Video abspielen</h2>
                 <video
                     onClick={(e) => handleClick(e.target)}
                     onEnded={() => changePage(1)}

@@ -31,17 +31,19 @@ export default function Home() {
                     <div className={`${show ? 'home-flex show' : 'home-flex'}`}>
                         <p>Wir wollen Lust machen auf einen</p>
                         <br />
-                        <p>
-                            einen <strong>Lebensraum</strong> mit
-                        </p>
                         <br />
                         <p>
-                            <strong> attraktiven</strong>
+                            <strong>Lebensraum</strong>
                         </p>
                         <br />
+                        <br />
+                        <p>mit</p>
+                        <br />
+                        <br />
                         <p>
-                            <strong>Zukunftsperspektiven</strong>...
+                            <strong> attraktiven Zukunftsperspektiven</strong>
                         </p>
+                        <br />
                         <br />
 
                         <button
@@ -59,13 +61,17 @@ export default function Home() {
                     <div className={`${show ? 'home-flex show' : 'home-flex'}`}>
                         <p>Wir zeigen dir Projekte und Ideen,</p>
                         <br />
-                        <p>die das Quartier in ihrer</p>
+                        <br />
+                        <p>die das Quartier in seiner</p>
+                        <br />
                         <br />
                         <p>
                             <strong>nachhaltigen Entwicklung stärken</strong>
                         </p>
                         <br />
+                        <br />
                         <p>sollen...</p>
+                        <br />
                         <br />
 
                         <a href='/map'>Kann ich jetzt zu den Projekten?</a>
