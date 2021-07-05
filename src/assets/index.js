@@ -16,6 +16,8 @@ import OverlayGebaeude from './overlays/overlay-gebaeude.png';
 import OverlayStadtGruen from './overlays/overlay-stadt-gruen.png';
 import OverlayStadtGruenMap from './overlays/overlay-stadt-gruen-map.png';
 import OverlayWirtschaft from './overlays/overlay-wirtschaft.png';
+import DetailsUrbanGardening_A from './details-urban-gardening-a.png';
+import DetailsUrbanGardening_B from './details-urban-gardening-b.png';
 import DetailsUrbanGardening from './details-urban-gardening.png';
 import DetailsUrbanGardening_2 from './details-urban-gardening-2.png';
 import OverlayStudentischesWohnen from './overlays/overlay-studentisches-wohnen.png';
@@ -74,6 +76,8 @@ export {
     OverlayStadtGruen,
     OverlayStadtGruenMap,
     OverlayWirtschaft,
+    DetailsUrbanGardening_A,
+    DetailsUrbanGardening_B,
     DetailsUrbanGardening,
     DetailsUrbanGardening_2,
     OverlayStudentischesWohnen,

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
-    CategoryStadtGruen,
+    DetailsUrbanGardening_A,
+    DetailsUrbanGardening_B,
     DetailsUrbanGardening,
     DetailsUrbanGardening_2,
 } from '../../assets';
@@ -14,7 +15,7 @@ export default function UrbanGardening() {
                 return (
                     <>
                         <div className='text-container'>
-                            <img src={CategoryStadtGruen} alt='' />
+                            <img src={DetailsUrbanGardening_A} alt='' />
                             <h3>Urban Gardening und Parken</h3>
                             <p>
                                 „Städtisches Gärtnern“, so könnte man das
@@ -61,7 +62,7 @@ export default function UrbanGardening() {
                 return (
                     <>
                         <div className='text-container'>
-                            <img src={CategoryStadtGruen} alt='' />
+                            <img src={DetailsUrbanGardening_B} alt='' />
                             <h3>Urban Gardening und Parken</h3>
                             <p>
                                 Das aktuelle Grundstück (Hof eines halb
