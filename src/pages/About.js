@@ -46,8 +46,8 @@ export default function About() {
                         </p>
                         <p>
                             <strong>Lieblingsplatz im Goethequartier:</strong>{' '}
-                            Die Goethestraße mit den vielen Bäumen und Vorgärten
-                            auf jeden Fall.
+                            Ich kann mich nicht entscheiden: Goethestraße oder
+                            der Zolli? Ich nehme beide!
                         </p>
                         <p>
                             <strong>
