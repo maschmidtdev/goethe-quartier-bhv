@@ -19,14 +19,14 @@ export default function Navbar() {
                         Karte
                     </Link>
                 </li>
-                {/* <li>
-                    <Link to='/about' onClick={handleClick}>
-                        Über uns
-                    </Link>
-                </li> */}
                 <li>
                     <Link to='/analyse' onClick={handleClick}>
                         Analyse
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/about' onClick={handleClick}>
+                        Über uns
                     </Link>
                 </li>
                 {/* <li>

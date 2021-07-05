@@ -679,16 +679,44 @@ img.urbanGarden-1 {
     cursor: pointer;
 }
 
-/* ================= ANALYSE =================== */
-section.analyse {
+section {
     width: 70vw;
     margin: 0 auto;
 }
+/* ================= ABOUT =================== */
+.about-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-flex article {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 50%;
+}
+.about-flex article p {
+    padding: 0.5rem 0;
+}
+.about-flex article img {
+    border: 2px solid mediumpurple;
+    margin-bottom: 1rem;
+}
+.about-flex article img,
+.about-flex article p {
+    width: 90%;
+}
+
+/* ================= ANALYSE =================== */
+
 section.analyse p {
     padding: 0.25rem;
     text-align: justify;
 }
-section.analyse .einleitung h1 {
+section.analyse .einleitung h1,
+section.about h1 {
     font-size: 50px;
     color: mediumpurple;
     padding: 1rem 0;

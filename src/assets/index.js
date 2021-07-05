@@ -53,6 +53,8 @@ import AnalyseThemenfelder_2 from './analyse/themenfelder-2.jpeg';
 import AnalyseFlaechennutzung from './analyse/flaechennutzungsplan.jpeg';
 import AnalyseLuftbild from './analyse/luftbild.jpeg';
 import AnalyseLuftbildCollage from './analyse/luftbild-collage.jpeg';
+import PhotoMaurice from './photo-maurice.jpg';
+import PhotoAfrooz from './photo-afrooz.jpg';
 
 export {
     MapDefault,
@@ -109,4 +111,6 @@ export {
     AnalyseFlaechennutzung,
     AnalyseLuftbild,
     AnalyseLuftbildCollage,
+    PhotoMaurice,
+    PhotoAfrooz,
 };
