@@ -52,7 +52,7 @@ export default function UrbanGardening() {
                             </div>
                         </div>
                         <img
-                            class='urbanGarden-1'
+                            className='urbanGarden-1'
                             src={DetailsUrbanGardening}
                             alt=''
                         />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useMapContext } from '../context/map_context';
 
 export default function MapPulldown() {
@@ -13,7 +13,6 @@ export default function MapPulldown() {
     };
 
     return (
-        // <div className='map-menu'>
         <div
             className={`${
                 mapState.category !== null

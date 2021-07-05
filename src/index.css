@@ -304,7 +304,7 @@ nav ul > li > a {
     padding-left: 1rem;
 }
 .map-menu p {
-    font-size: large;
+    font-size: larger;
 }
 
 /* =============== CATEGORY =============== */
@@ -522,7 +522,6 @@ nav ul > li > a {
         font-size: small;
     }
 }
-
 @media screen and (max-width: 1200px) {
     .details-content .hochschule-nord p {
         font-size: medium;
@@ -608,6 +607,8 @@ nav ul > li > a {
 .text-container {
     padding-right: 1rem;
     /* padding-right: 5rem; */
+    flex-basis: 20%;
+    flex: 1;
 }
 .text-container h3 {
     margin: 0.5rem;
@@ -617,12 +618,13 @@ nav ul > li > a {
     max-width: 50%;
     padding: 1rem;
 }
-img.urbanGarden-1 {
-    width: 90%;
-    height: 50%;
-    object-fit: contain;
-}
 
+img.urbanGarden-1 {
+    /* width: 100%; */
+    height: 30%;
+    object-fit: contain;
+    align-self: center;
+}
 .urbanGarden-2 {
     position: relative;
     width: 100%;

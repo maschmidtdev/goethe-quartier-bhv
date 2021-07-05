@@ -6,8 +6,8 @@ export default function MehrGrueneDaecher() {
         <div className='details-content'>
             <div className='details-flex-col'>
                 <div className='video-container'>
-                    <img src={ImgMehrGrueneDaecher} />
-                    <div className="copy-flex">
+                    <img src={ImgMehrGrueneDaecher} alt='gruene daecher' />
+                    <div className='copy-flex'>
                         <span></span>
                     </div>
                 </div>

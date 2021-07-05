@@ -18,11 +18,11 @@ export default function MapMenu() {
                 <h3>Du hast jetzt die Wahl!</h3>
                 <p>
                     Wir haben unsere Ideen für das Goethequartier in vier
-                    Kategorien unterteile, um es etwas übersichtlicher zu
+                    Kategorien unterteilt, um es etwas übersichtlicher zu
                     gestalten. Hinter jeder Kategorie verbergen sich mehrere
                     einzelne Ideen und Projekte, die das Goethequartier noch
                     lebenswerter machen könnten. Klicke dich durch die
-                    Kategorien und entdecke, was in uznserer Stadt alles möglich
+                    Kategorien und entdecke, was in unserer Stadt alles möglich
                     wäre:
                 </p>
                 <div className='categories-flex'>

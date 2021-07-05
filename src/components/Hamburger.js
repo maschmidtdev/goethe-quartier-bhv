@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavContext } from '../context/nav_context';
 
 export default function Hamburger() {
