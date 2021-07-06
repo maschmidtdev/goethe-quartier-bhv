@@ -9,7 +9,7 @@ export default function Impressum() {
                 <p>
                     Maurice Schmidt <br />
                     Hülsen 7<br />
-                    27574 br/emerhaven <br />
+                    27574 Bremerhaven <br />
                 </p>
                 <p>
                     {' '}
@@ -77,11 +77,11 @@ export default function Impressum() {
                     <br />
                     Die durch die Seitenbetreiber erstellten Inhalte und Werke
                     auf diesen Seiten unterliegen dem deutschen Urheberrecht.
-                    Die Vervielfältigung, Bearbeitung, Verbr/eitung und jede Art
+                    Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art
                     der Verwertung außerhalb der Grenzen des Urheberrechtes
                     bedürfen der schriftlichen Zustimmung des jeweiligen Autors
                     bzw. Erstellers. Downloads und Kopien dieser Seite sind nur
-                    für den privaten, nicht kommerziellen Gebr/auch gestattet.
+                    für den privaten, nicht kommerziellen Gebrauch gestattet.
                     Soweit die Inhalte auf dieser Seite nicht vom Betreiber
                     erstellt wurden, werden die Urheberrechte Dritter beachtet.
                     Insbesondere werden Inhalte Dritter als solche
@@ -134,20 +134,19 @@ export default function Impressum() {
                     Websiteaktivitäten für die Websitebetreiber
                     zusammenzustellen und um weitere mit der Websitenutzung und
                     der Internetnutzung verbundene Dienstleistungen zu
-                    erbr/ingen. Auch wird Google diese Informationen
+                    erbringen. Auch wird Google diese Informationen
                     gegebenenfalls an Dritte übertragen, sofern dies gesetzlich
                     vorgeschrieben oder soweit Dritte diese Daten im Auftrag von
                     Google verarbeiten. Google wird in keinem Fall Ihre
                     IP-Adresse mit anderen Daten der Google in Verbindung
-                    br/ingen. Sie können die Installation der Cookies durch eine
-                    entsprechende Einstellung Ihrer br/owser Software
-                    verhindern; wir weisen Sie jedoch darauf hin, dass Sie in
-                    diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser
-                    Website voll umfänglich nutzen können. Durch die Nutzung
-                    dieser Website erklären Sie sich mit der Bearbeitung der
-                    über Sie erhobenen Daten durch Google in der zuvor
-                    beschriebenen Art und Weise und zu dem zuvor benannten Zweck
-                    einverstanden.
+                    bringen. Sie können die Installation der Cookies durch eine
+                    entsprechende Einstellung Ihrer browser Software verhindern;
+                    wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall
+                    gegebenenfalls nicht sämtliche Funktionen dieser Website
+                    voll umfänglich nutzen können. Durch die Nutzung dieser
+                    Website erklären Sie sich mit der Bearbeitung der über Sie
+                    erhobenen Daten durch Google in der zuvor beschriebenen Art
+                    und Weise und zu dem zuvor benannten Zweck einverstanden.
                     <br />
                     <br />
                     <strong>Google AdSense</strong>
