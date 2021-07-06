@@ -16,7 +16,7 @@ export default function Home() {
                             wenn sich zwei MasterstudentInnen der Architektur
                             mit dem
                         </p>
-                        <h1>G O T H E Q U A R T I E R</h1>
+                        <h1>G O E T H E Q U A R T I E R</h1>
                         <p>
                             in <em>Bremerhaven-Lehe</em>
                         </p>
